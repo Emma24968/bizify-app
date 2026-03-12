@@ -8,10 +8,7 @@ import menu from "@/public/menu.svg";
 import {
   ChevronDown,
   Facebook,
-  Instagram,
-  InstagramIcon,
   Linkedin,
-  Menu,
   Search,
   Twitter,
 } from "lucide-react";
