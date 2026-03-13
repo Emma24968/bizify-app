@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Unbounded } from "next/font/google";
+import { Unbounded, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { gallerys } from "@/app/data";
 import Image from "next/image";
@@ -12,6 +12,10 @@ import {
   Search,
   Twitter,
 } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+const jetbrainsMono = JetBrains_Mono({subsets:['latin'],variable:'--font-mono'});
+
 const inter = Unbounded({
   subsets: ["latin"],
 });
@@ -27,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={cn("font-mono", jetbrainsMono.variable)}>
       <body className={`${inter.className} antialiased`}>
 <header className="bg-[#FBFBFB] flex items-center justify-between px-10 py-4">
 
