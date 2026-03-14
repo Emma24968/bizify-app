@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Unbounded, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 import { gallerys } from "@/app/data";
 import Image from "next/image";
 import logo from "@/public/logo.svg";
@@ -13,6 +14,7 @@ import {
   Twitter,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import ThemeToggle from "./theme-toggle";
 
 const jetbrainsMono = JetBrains_Mono({subsets:['latin'],variable:'--font-mono'});
 
@@ -32,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={cn("font-mono", jetbrainsMono.variable)}>
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${inter.className} antialiased`} >
 <header className="bg-[#FBFBFB] flex items-center justify-between px-10 py-4">
 
   <Image src={logo} alt="Bizify Logo" width={150} height={50} />
@@ -65,11 +67,12 @@ export default function RootLayout({
   </nav>
 
   <div className="flex items-center gap-4">
+    <ThemeToggle />
     <Search className="cursor-pointer" />
     <Image src={menu} alt="menu icon" width={24} className="cursor-pointer" />
   </div>
 
-</header>        {children}
+</header>     <ThemeProvider attribute='class' enableSystem defaultTheme="system">{children}</ThemeProvider>   
 
 <footer className="bg-[#F4F5F6] px-16 py-14 grid grid-cols-4 gap-12">
 
