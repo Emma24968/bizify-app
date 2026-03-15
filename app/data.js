@@ -76,12 +76,18 @@ export const About_checks = [
   { image: check, description: "Created 40+ unique sections with responsiveness." },
   { image: check, description: "You will able to build a new site with an ease." },
   { image: check, description: "Booster is made for stay ahead from the compitition." },
-];
+]; 
+// 08035475178,08096931863
 export const teams = [
   { image: team1, name: "Brooklyn Simmons", position: "Founder" },
   { image: team3, name: "Sophia Rodriguez", position: "Creative Director" },
   { image: team2, name: "Marvin McKinney", position: "Product Designer" },
   { image: team4, name: "Alexander Cameron", position: "Lead Developer" },
+];
+export const members = [
+  { image: team1, name: "Brooklyn Simmons", position: "Founder" },
+  { image: team3, name: "Sophia Rodriguez", position: "Creative Director" },
+  { image: team2, name: "Marvin McKinney", position: "Product Designer" },
 ];
 
 export const projects = [
