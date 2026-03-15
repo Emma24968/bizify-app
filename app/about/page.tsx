@@ -1,4 +1,13 @@
-import { ChevronRight, Instagram, Linkedin, TwitterIcon } from "lucide-react";
+"use client";
+import {
+  ArrowLeft,
+  ArrowRight,
+  ChevronRight,
+  Instagram,
+  Linkedin,
+  Star,
+  TwitterIcon,
+} from "lucide-react";
 import React from "react";
 import { About_checks, cards, checks, members } from "../data";
 import About_icon from "@/public/About_icon.svg";
@@ -169,6 +178,30 @@ export default function About() {
           <Image src={Team} alt="image" width={300} />
           <div>
             <Image src={quote} alt="quote icon" className="rotate-180" />
+            <p>
+              “He quickly delivered excellent design as per required
+              specifications. New landing page will have refreshing simple look,
+              while keeping page load light on images and at the same time
+              keeping professional look. Finally, it also seems very reasonable
+              to implement responsive design, so I'm very happy with that.”
+            </p>
+            <hr />
+            <div className="flex gap-1 mb-4">
+              {[...Array(5)].map((_, index) => (
+                <Star key={index} fill="#ECB014" className="text-[#ECB014]" />
+              ))}
+            </div>
+
+            <p className="font-semibold">Marvin McKinney</p>
+            <p className="text-sm text-gray-600">Lead Developer</p>
+            <div>
+              <div className=" right-5 top-1/2 -translate-y-1/2 h-[45px] w-[45px] bg-green-800 rounded-full flex items-center justify-center cursor-pointer">
+                <ArrowLeft />
+              </div>
+              <div className=" right-5 top-1/2 -translate-y-1/2 h-[45px] w-[45px] bg-green-800 rounded-full flex items-center justify-center cursor-pointer">
+                <ArrowRight />
+              </div>
+            </div>
           </div>
         </div>
       </section>
