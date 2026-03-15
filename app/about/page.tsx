@@ -215,8 +215,13 @@ export default function About() {
         </div>
       </section>
       <section>
-        
+        <div className="">
+          <h3>Make something <br /> awesome.</h3>
+          <p>Each demo built with Teba will look different. You can customize almost <br /> in the appearance of your website with only a few clicks. Each <br /> demo built with Teba will look different.</p>
+        </div>
+        <div className=""></div>
       </section>
     </div>
   );
 }
+
