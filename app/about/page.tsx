@@ -2,6 +2,8 @@ import { ChevronRight } from "lucide-react";
 import React from "react";
 import { About_checks, cards, checks } from "../data";
 import About_icon from "@/public/About_icon.svg";
+import anchor from "@/public/anchor.svg";
+import hand from "@/public/hand.svg";
 import Image from "next/image";
 
 export default function About() {
@@ -60,24 +62,44 @@ export default function About() {
           </button>
         </div>
       </section>
-      <section>
+      <section className="flex bg-[#F4F5F6] px-15">
+        <div>
+          {" "}
+          <h3 className="text-5xl font-bold ">
+            We are here to help solve your problems.{" "}
+          </h3>
+          <p>
+            The argument in favor of using filler text goes something like this:{" "}
+            <br /> If you use real content in the process, anytime you reach.
+          </p>
+          <div className="grid gap-4">
+            <div className="flex gap-3">
+              <Image src={anchor} alt="anchor icon" width={60} className="bg-green-800 p-2 rounded-[4px]"/>
+              <div className="">
+
+              <p className="font-semibold text-[15px]">Project Processing</p>
+              <p>Group discussion first quarter teams viral business <br /> loremipsu adoption cob economy whist.</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <Image src={hand} alt="anchor icon" width={60} className="bg-green-800 p-2 rounded-[4px]"/>
+              <div className="">
+
+              <p className="font-semibold text-[15px]">Financial Solutions</p>
+              <p>Group discussion first quarter teams viral business <br /> loremipsu adoption cob economy whist.</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="px-16">
           {cards.map((card, index) => {
             return (
               <div key={index} className="relative">
                 <Image src={card.image} alt="image" width={300} />
-                <div className="bg-green-900 flex pl-2 gap-4 text-white py-3 content-between absolute bottom-10 rounded-r-full flex w-[200px]">
-                  <Image src={About_icon} alt="image" className="" />
-                  <p className="text-[14px] ">
-                    <span className="text-[24px] ">99%</span> <br /> Success
-                    Rate
-                  </p>
-                </div>
               </div>
             );
           })}
         </div>{" "}
-        <div className=""></div>
       </section>
     </div>
   );
