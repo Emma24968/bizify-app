@@ -5,6 +5,9 @@ import {
   ChevronRight,
   Instagram,
   Linkedin,
+  Locate,
+  Mail,
+  MapPin,
   Star,
   TwitterIcon,
 } from "lucide-react";
@@ -175,7 +178,11 @@ export default function About() {
           </button>
         </div>
         <div className="flex justify-between text-white">
-          <Image src={Team} alt="image" className="text-white w-[400px] h-[500px] rounded-2xl " />
+          <Image
+            src={Team}
+            alt="image"
+            className="text-white w-[400px] h-[500px] rounded-2xl "
+          />
           <div className="grid my-4">
             <Image src={vector} alt="vector icon" />
             <p>
@@ -214,14 +221,85 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="px-16 py-16">
         <div className="">
-          <h3>Make something <br /> awesome.</h3>
-          <p>Each demo built with Teba will look different. You can customize almost <br /> in the appearance of your website with only a few clicks. Each <br /> demo built with Teba will look different.</p>
+          <h3>
+            Make something <br /> awesome.
+          </h3>
+          <p>
+            Each demo built with Teba will look different. You can customize
+            almost <br /> in the appearance of your website with only a few
+            clicks. Each <br /> demo built with Teba will look different.
+          </p>
+          <div className="flex justify-between">
+            <div className=" h-[48px] bg-black">
+              <MapPin color="#ffffff" />
+              <p>Address</p>
+              <p>
+                KDA Shiromoni I/A, Shiromoni,
+                <br /> Khulna, Bangladesh
+              </p>
+            </div >
+            <div className=" h-[48px] bg-black">
+              <Mail color="#ffffff" />
+              <p>Contact</p>
+              <p>
+                bizify@example.com <br />
+                123-345-3456
+              </p>
+            </div>
+          </div>
         </div>
-        <div className=""></div>
+        <div className="">
+
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-3xl font-bold text-blue-900 mb-2">
+          Fill The Contact Form
+        </h2>
+
+        <p className="text-gray-500 mb-10">
+          Feel free to contact with us, we don't spam your email
+        </p>
+        <form className="space-y-8">
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <input
+              type="text"
+              placeholder="Your name"
+              className="bg-transparent border-b border-gray-300 focus:outline-none focus:border-green-500 py-2"
+            />
+
+            <input
+              type="text"
+              placeholder="Phone number"
+              className="bg-transparent border-b border-gray-300 focus:outline-none focus:border-green-500 py-2"
+            />
+          </div>
+
+          <input
+            type="email"
+            placeholder="Email address"
+            className="w-full bg-transparent border-b border-gray-300 focus:outline-none focus:border-green-500 py-2"
+          />
+
+          <textarea
+            placeholder="Write your message"
+            rows={4}
+            className="w-full bg-transparent border-b border-gray-300 focus:outline-none focus:border-green-500 py-2 resize-none"
+          ></textarea>
+
+          <button
+            type="submit"
+            className="w-full bg-green-700 hover:bg-green-800 text-white py-4 rounded-md font-medium transition"
+          >
+            Send Message
+          </button>
+
+        </form>
+      </div>
+
+        </div>
       </section>
     </div>
   );
 }
-
