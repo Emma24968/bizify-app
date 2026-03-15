@@ -72,6 +72,11 @@ export const checks = [
   { image: check, description: "Budget Friendly Theme" },
   { image: check, description: "Happy Customers" },
 ];
+export const About_checks = [
+  { image: check, description: "Created 40+ unique sections with responsiveness." },
+  { image: check, description: "You will able to build a new site with an ease." },
+  { image: check, description: "Booster is made for stay ahead from the compitition." },
+];
 export const teams = [
   { image: team1, name: "Brooklyn Simmons", position: "Founder" },
   { image: team3, name: "Sophia Rodriguez", position: "Creative Director" },

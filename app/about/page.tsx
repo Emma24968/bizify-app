@@ -1,6 +1,7 @@
 import { ChevronRight } from "lucide-react";
 import React from "react";
-import { cards, checks } from "../data";
+import { About_checks, cards, checks } from "../data";
+import About_icon from "@/public/About_icon.svg";
 import Image from "next/image";
 
 export default function About() {
@@ -15,22 +16,41 @@ export default function About() {
           <span className="text-white">About Us</span>
         </h3>
       </section>
-      <section>
+      <section className="flex py-16">
+        <div className="px-16">
+          {cards.map((card, index) => {
+            return (
+              <div key={index} className="relative">
+                <Image src={card.image} alt="image" width={300} />
+                <div className="bg-green-900 flex pl-2 gap-4 text-white py-3 content-between absolute bottom-10 rounded-r-full flex w-[200px]">
+                  <Image src={About_icon} alt="image" className="" />
+                  <p className="text-[14px] ">
+                    <span className="text-[24px] ">99%</span> <br /> Success
+                    Rate
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>{" "}
         <div className="flex px-16 flex-col w-[60%] gap-15">
           <h3 className="text-5xl font-bold ">
-            We are the top digital marketer Company
+            Cutting-edge solutions for finance{" "}
           </h3>
           <p>
-            When an unknown printer took a galley of type and scrambled it ake a
-            type specimen book. when an unknown printer took a galley of type
-            and scrambled it type specimen book.
+            The argument in favor of using filler text goes something like this
+            If <br /> you use real content in the design process, anytime you
+            reach <br />
+            review point you’ll end up reviewing.
           </p>
-          <div className="grid gap-3 grid-cols-2">
-            {checks.map((check, index) => {
+          <div className="grid gap-3">
+            {About_checks.map((check, index) => {
               return (
                 <div key={index} className="flex gap-4  items-center">
                   <Image src={check.image} width={20} alt={check.description} />
-                  <p className=" text-[15px] font-bold">{check.description}</p>
+                  <p className=" text-[15px] font-semibold">
+                    {check.description}
+                  </p>
                 </div>
               );
             })}
@@ -39,16 +59,25 @@ export default function About() {
             More About Us{" "}
           </button>
         </div>
+      </section>
+      <section>
         <div className="px-16">
           {cards.map((card, index) => {
             return (
-              <div className="relative">
+              <div key={index} className="relative">
                 <Image src={card.image} alt="image" width={300} />
-                <Image src={card.logo} alt="image" />
+                <div className="bg-green-900 flex pl-2 gap-4 text-white py-3 content-between absolute bottom-10 rounded-r-full flex w-[200px]">
+                  <Image src={About_icon} alt="image" className="" />
+                  <p className="text-[14px] ">
+                    <span className="text-[24px] ">99%</span> <br /> Success
+                    Rate
+                  </p>
+                </div>
               </div>
             );
           })}
-        </div>
+        </div>{" "}
+        <div className=""></div>
       </section>
     </div>
   );
