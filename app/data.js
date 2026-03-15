@@ -77,7 +77,6 @@ export const About_checks = [
   { image: check, description: "You will able to build a new site with an ease." },
   { image: check, description: "Booster is made for stay ahead from the compitition." },
 ]; 
-// 08035475178,08096931863
 export const teams = [
   { image: team1, name: "Brooklyn Simmons", position: "Founder" },
   { image: team3, name: "Sophia Rodriguez", position: "Creative Director" },

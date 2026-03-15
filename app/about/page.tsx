@@ -13,14 +13,14 @@ import { About_checks, cards, checks, members } from "../data";
 import About_icon from "@/public/About_icon.svg";
 import anchor from "@/public/anchor.svg";
 import hand from "@/public/hand.svg";
-import quote from "@/public/Icon.svg";
+import vector from "@/public/Vector.svg";
 import Team from "@/public/Team4.jpg";
 import Image from "next/image";
 
 export default function About() {
   return (
     <div className=" ">
-      <section className="bg-green-800 w-full py-[150px] h-[500px] text-center">
+      <section className="bg-[#153C3C] w-full py-[150px] h-[500px] text-center">
         <h1 className="px-16 text-[70px] text-white font-bold">About Us</h1>
         <h3 className="px-16 flex justify-center">
           {" "}
@@ -163,7 +163,7 @@ export default function About() {
           })}
         </div>
       </section>
-      <section className="py-16 px-16">
+      <section className="py-16 px-16 bg-[#153C3C]">
         <div className="flex justify-between items-center mb-12">
           <h3 className="text-5xl font-bold">
             What our clients
@@ -174,36 +174,48 @@ export default function About() {
             View All Reviews
           </button>
         </div>
-        <div className="flex">
-          <Image src={Team} alt="image" width={300} />
-          <div>
-            <Image src={quote} alt="quote icon" className="rotate-180" />
+        <div className="flex justify-between text-white">
+          <Image src={Team} alt="image" className="text-white w-[400px] h-[500px] rounded-2xl " />
+          <div className="grid my-4">
+            <Image src={vector} alt="vector icon" />
             <p>
-              “He quickly delivered excellent design as per required
-              specifications. New landing page will have refreshing simple look,
-              while keeping page load light on images and at the same time
-              keeping professional look. Finally, it also seems very reasonable
-              to implement responsive design, so I'm very happy with that.”
+              “He quickly delivered excellent design as per required <br />
+              specifications. New landing page will have refreshing <br />{" "}
+              simple look, while keeping page load light on images and <br /> at
+              the same time keeping professional look. Finally, it also <br />{" "}
+              seems very reasonable to implement responsive design,
+              <br /> so I'm very happy with that.”
             </p>
             <hr />
-            <div className="flex gap-1 mb-4">
-              {[...Array(5)].map((_, index) => (
-                <Star key={index} fill="#ECB014" className="text-[#ECB014]" />
-              ))}
-            </div>
+            <div className="flex justify-between">
+              <div className="">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, index) => (
+                    <Star
+                      key={index}
+                      fill="#ECB014"
+                      className="text-[#ECB014]"
+                    />
+                  ))}
+                </div>
 
-            <p className="font-semibold">Marvin McKinney</p>
-            <p className="text-sm text-gray-600">Lead Developer</p>
-            <div>
-              <div className=" right-5 top-1/2 -translate-y-1/2 h-[45px] w-[45px] bg-green-800 rounded-full flex items-center justify-center cursor-pointer">
-                <ArrowLeft />
+                <p className="font-semibold">Marvin McKinney</p>
+                <p className="text-sm text-[#F4F5F6]">Lead Developer</p>
               </div>
-              <div className=" right-5 top-1/2 -translate-y-1/2 h-[45px] w-[45px] bg-green-800 rounded-full flex items-center justify-center cursor-pointer">
-                <ArrowRight />
+              <div className="flex gap-1.5">
+                <div className=" right-5 top-1/2 h-[45px]  w-[45px] text-black hover:text-white bg-white hover:bg-green-800 rounded-full flex items-center justify-center cursor-pointer">
+                  <ArrowLeft />
+                </div>
+                <div className=" right-5 top-1/2  h-[45px]  w-[45px] text-black hover:text-white bg-white hover:bg-green-800 rounded-full flex items-center justify-center cursor-pointer">
+                  <ArrowRight />
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        
       </section>
     </div>
   );
