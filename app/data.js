@@ -85,9 +85,9 @@ export const teams = [
   { image: team4, name: "Alexander Cameron", position: "Lead Developer" },
 ];
 export const members = [
-  { image: team1, name: "Brooklyn Simmons", position: "Founder" },
-  { image: team3, name: "Sophia Rodriguez", position: "Creative Director" },
-  { image: team2, name: "Marvin McKinney", position: "Product Designer" },
+  { image: team1, name: "Brooklyn Simmons", position: 'Finance Advisor'},
+  { image: team3, name: "Sophia Rodriguez", position: 'Finance Advisor'},
+  { image: team2, name: "Marvin McKinney", position: "Business Engr." },
 ];
 
 export const projects = [

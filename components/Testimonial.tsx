@@ -1,11 +1,13 @@
-import { ChevronLeft, ChevronRight, Star } from 'lucide-react'
-import React from 'react'
-import Image from 'next/image'
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import React from "react";
+import Image from "next/image";
 import quote from "@/public/Icon.svg";
 
 export default function Testimonial() {
   return (
-    <div>      <section className="relative text-center bg-gray-300 py-16 flex flex-col items-center">
+    <div>
+      {" "}
+      <section className="relative text-center bg-gray-300 py-16 flex flex-col items-center">
         <div className="absolute left-5 top-1/2 -translate-y-1/2 h-[45px] w-[45px] bg-white rounded flex items-center justify-center cursor-pointer">
           <ChevronLeft />
         </div>
@@ -33,6 +35,6 @@ export default function Testimonial() {
           <ChevronRight />
         </div>
       </section>
-</div>
-  )
+    </div>
+  );
 }

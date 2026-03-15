@@ -4,6 +4,8 @@ import { About_checks, cards, checks, members } from "../data";
 import About_icon from "@/public/About_icon.svg";
 import anchor from "@/public/anchor.svg";
 import hand from "@/public/hand.svg";
+import quote from "@/public/Icon.svg";
+import Team from "@/public/Team4.jpg";
 import Image from "next/image";
 
 export default function About() {
@@ -123,26 +125,51 @@ export default function About() {
           {members.map((team, index) => {
             return (
               <div key={index} className="rounded-lg group relative">
-
                 <div className="text-center rounded-t-xl px-4 pt-4 rounded-b-xl bg-[#e3ebf3d4]">
-                <Image
-                  src={team.image}
-                  alt={team.name}
-                  className="rounded-t-xl"
-                  width={220}
-                />
+                  <Image
+                    src={team.image}
+                    alt={team.name}
+                    className="rounded-t-xl"
+                    width={220}
+                  />
                   <p className=" text-[15px] font-bold">{team.name}</p>
                   <p>{team.position}</p>
-                  <div className="flex gap-1 justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                    <div className="bg-white hover:bg-green-800 p-1 w-7 rounded-[2px] text-black hover:text-white text-[12px]">FB</div>
-                    <div className="bg-white hover:bg-green-800 p-1 w-7 rounded-[2px] text-black hover:text-white text-[12px]">TW</div>
-                    <div className="bg-white hover:bg-green-800 p-1 w-7 rounded-[2px] text-black hover:text-white text-[12px]">IG</div>
-                    <div className="bg-white hover:bg-green-800 p-1 w-7 rounded-[2px] text-black hover:text-white text-[12px]">YT</div>
+                  <div className="flex gap-1 justify-center opacity-0 group-hover:opacity-100 transition duration-300 pb-4">
+                    <div className="bg-white hover:bg-green-800 p-1 w-[36px] content-center h-[36px] rounded-[2px] text-black hover:text-white text-[13px] cursor-pointer">
+                      <a href="#">FB</a>
+                    </div>
+                    <div className="bg-white hover:bg-green-800 p-1 w-[36px] content-center h-[36px] rounded-[2px] text-black hover:text-white text-[13px] cursor-pointer">
+                      <a href="#">TW</a>
+                    </div>
+                    <div className="bg-white hover:bg-green-800 p-1 w-[36px] content-center h-[36px] rounded-[2px] text-black hover:text-white text-[13px] cursor-pointer">
+                      <a href="#">IG</a>
+                    </div>
+                    <div className="bg-white hover:bg-green-800 p-1 w-[36px] content-center h-[36px] rounded-[2px] text-black hover:text-white text-[13px] cursor-pointer">
+                      <a href="#">YT</a>
+                    </div>
                   </div>
                 </div>
               </div>
             );
           })}
+        </div>
+      </section>
+      <section className="py-16 px-16">
+        <div className="flex justify-between items-center mb-12">
+          <h3 className="text-5xl font-bold">
+            What our clients
+            <br /> say about us
+          </h3>
+
+          <button className="bg-[#84a17d] text-[15px] w-[10rem] rounded-lg py-3 px-2 text-white">
+            View All Reviews
+          </button>
+        </div>
+        <div className="flex">
+          <Image src={Team} alt="image" width={300} />
+          <div>
+            <Image src={quote} alt="quote icon" className="rotate-180" />
+          </div>
         </div>
       </section>
     </div>
