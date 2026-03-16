@@ -74,7 +74,7 @@ export default function RootLayout({
 
 </header>     <ThemeProvider attribute='class' enableSystem defaultTheme="system">{children}</ThemeProvider>   
 
-<footer className="bg-[#F4F5F6] px-16 py-14 grid grid-cols-4 gap-12">
+<footer className="bg-[#F4F5F6]  px-16 py-14 grid grid-cols-4 gap-12">
 
   <div className="flex flex-col gap-6">
     <Image src={logo} alt="logo" />
@@ -85,22 +85,22 @@ export default function RootLayout({
     </p>
 
     <div className="flex gap-4">
-      <div className="bg-white p-2 rounded hover:bg-[#84A17D] cursor-pointer">
+      <div className="bg-white p-2 rounded hover:bg-[#84A17D] dark:hover:bg-black dark:hover:text-white dark:bg-[#84A17D] cursor-pointer">
         <Facebook />
       </div>
 
-      <div className="bg-white p-2 rounded hover:bg-[#84A17D] cursor-pointer">
+      <div className="bg-white p-2 rounded hover:bg-[#84A17D] dark:hover:bg-black dark:hover:text-white dark:bg-[#84A17D] cursor-pointer">
         <Twitter />
       </div>
 
-      <div className="bg-white p-2 rounded hover:bg-[#84A17D] cursor-pointer">
+      <div className="bg-white p-2 rounded hover:bg-[#84A17D] dark:hover:bg-black dark:hover:text-white dark:bg-[#84A17D] cursor-pointer">
         <Linkedin />
       </div>
     </div>
   </div>
 
   <div>
-    <h3 className="font-semibold mb-4">Quick Links</h3>
+    <h3 className="font-semibold mb-4 dark:text-[#172426]">Quick Links</h3>
 
     <ul className="flex flex-col gap-3 text-gray-600">
       <li><a href="#">Home</a></li>
@@ -112,7 +112,7 @@ export default function RootLayout({
   </div>
 
   <div>
-    <h3 className="font-semibold mb-4">Useful Links</h3>
+    <h3 className="font-semibold mb-4 dark:text-[#172426]">Useful Links</h3>
 
     <ul className="flex flex-col gap-3 text-gray-600">
       <li><a href="#">Company</a></li>
