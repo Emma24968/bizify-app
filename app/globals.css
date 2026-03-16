@@ -121,8 +121,13 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-gray-900;
   }
+
+  .dark body {
+    @apply dark:bg-zinc-900 text-white;
+  }
+
   html {
     @apply font-mono;
   }
