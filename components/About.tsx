@@ -4,7 +4,7 @@ import { cards,card2,checks } from '@/app/data';
 
 export default function About() {
   return (
-    <div>      <section className="bg-[#f4f5f6] py-16 flex gap-20 px-[5rem]">
+    <div>      <section className="bg-[#f4f5f6] dark:bg-[#ffffffe5] text-[#000000f4] py-16 flex gap-20 px-[5rem]">
         <div className="flex gap-6 w-[75%]">
           {cards.map((card, index) => {
             return (

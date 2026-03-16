@@ -12,7 +12,7 @@ export default function Service() {
                 <h3 className="text-5xl font-bold mb-5">
                   Amazing <br /> solutions for <br /> business
                 </h3>
-                <p>
+                <p className='text-[15px] '>
                   With over 25 years of experience, we have crafted thousands of{" "}
                   <br /> Strategic discovery process that enables us peelback
                   thousands <br /> which enable us to understand.
@@ -22,7 +22,7 @@ export default function Service() {
               <div className="grid mt-10 w-[306px] h-[382px] hover:shadow-2xl transition bg-[#f4f5f6] p-6 rounded-2xl">
                 <Image src={icon} alt="icon" />
                 <h3 className="text-2xl font-bold">Marketing Strategy</h3>
-                <p>
+                <p className='text-[15px] '>
                   when an unknown printer took gerty galley types awec erambled when
                   an unknown printea wr took galley Insurance ollowing.
                 </p>
