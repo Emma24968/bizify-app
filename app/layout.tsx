@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn("font-mono", jetbrainsMono.variable)}>
       <body className={`${inter.className} antialiased`} >
-<header className="bg-[#FBFBFB] flex items-center justify-between px-10 py-4">
+<header className="bg-[#FBFBFB] dark:text-[#282626] flex items-center justify-between px-10 py-4">
 
   <Image src={logo} alt="Bizify Logo" width={150} height={50} />
 
