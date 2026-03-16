@@ -4,7 +4,7 @@ import { plans } from '@/app/data';
 
 export default function Plan() {
   return (
-    <div>      <section className="text-center my-18">
+    <div>      <section className="text-center py-18 dark:bg-[#ffffff] text-[#000000f4]">
         <div className="flex flex-col items-center">
           <h3 className="text-5xl font-bold mb-8">
             Choose the plans <br /> that suits you!
@@ -28,7 +28,7 @@ export default function Plan() {
         <div className="flex justify-center gap-14">
           {plans.map((plan, index) => {
             return (
-              <div key={index} className="rounded-xl bg-[#e3ebf3d4] p-10">
+              <div key={index} className="rounded-xl bg-[#e3ebf3d4] dark:bg-[#e4e4e4] p-10">
                 <h3 className="text-[25px] font-semibold mb-8">{plan.title}</h3>
                 <p>{plan.description}</p>
                 <div className="bg-white p-4 rounded-[9px] mt-4 mb-5">
