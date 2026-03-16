@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { clients } from '@/app/data';
 export default function Client() {
   return (
-    <div>      <section className="text-center py-16">
+    <div>      <section className="text-center dark:bg-white text-black py-16">
         <h3 className="mb-16 text-xl font-bold">
           We’ve worked on over 150 projects <br /> with 100+ clients
         </h3>
