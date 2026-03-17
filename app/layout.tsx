@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import ThemeToggle from "./theme-toggle";
+import Link from "next/link";
 
 const jetbrainsMono = JetBrains_Mono({subsets:['latin'],variable:'--font-mono'});
 
@@ -43,26 +44,26 @@ export default function RootLayout({
   <nav>
     <ul className="flex items-center gap-6">
       <li className="flex items-center gap-1 cursor-pointer">
-        <a href="#">Home</a>
+        <Link href="/">Home</Link>
         <ChevronDown size={16} />
       </li>
 
       <li>
-        <a href="#">About us</a>
+        <Link href="/about">About us</Link>
       </li>
 
       <li className="flex items-center gap-1 cursor-pointer">
-        <a href="#">Pages</a>
+        <Link href="#">Pages</Link>
         <ChevronDown size={16} />
       </li>
 
       <li className="flex items-center gap-1 cursor-pointer">
-        <a href="#">Blog</a>
+        <Link href="#">Blog</Link>
         <ChevronDown size={16} />
       </li>
 
       <li>
-        <a href="#">Contact</a>
+        <Link href="#">Contact</Link>
       </li>
     </ul>
   </nav>
@@ -104,11 +105,11 @@ export default function RootLayout({
     <h3 className="font-semibold mb-4 dark:text-[#172426]">Quick Links</h3>
 
     <ul className="flex flex-col gap-3 text-gray-600">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About us</a></li>
-      <li><a href="#">Pages</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="/">Home</a></li>
+      <li><Link href="/about">About us</Link></li>
+      <li><Link href="#">Pages</Link></li>
+      <li><Link href="#">Blog</Link></li>
+      <li><Link href="#">Contact</Link></li>
     </ul>
   </div>
 
