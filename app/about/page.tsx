@@ -13,13 +13,13 @@ import {
 import React from "react";
 import { About_checks, cards, checks, members } from "../data";
 import About_icon from "@/public/About_icon.svg";
-import anchor from "@/public/anchor.svg";
-import hand from "@/public/hand.svg";
 import vector from "@/public/Vector.svg";
 import Team from "@/public/Team4.jpg";
 import Image from "next/image";
+import About from "@/components/about/About";
+import AboutIntro from "@/components/about/AboutIntro";
 
-export default function About() {
+export default function AboutPage() {
   return (
     <div className=" ">
       <section className="bg-[#153C3C]  w-full py-[150px] h-[500px] text-center">
@@ -31,59 +31,8 @@ export default function About() {
           <span className="text-white">About Us</span>
         </h3>
       </section>
-      <section className="flex bg-[#F4F5F6] py-16 px-15">
-        <div className="grid gap-8">
-          {" "}
-          <h3 className="text-[54px] font-bold ">
-            We are here to help solve your problems.{" "}
-          </h3>
-          <p>
-            The argument in favor of using filler text goes something like this:{" "}
-            <br /> If you use real content in the process, anytime you reach.
-          </p>
-          <div className="grid gap-4">
-            <div className="flex gap-3">
-              <Image
-                src={anchor}
-                alt="anchor icon"
-                width={60}
-                className="bg-[#84A17D] p-2 rounded-[4px]"
-              />
-              <div className="">
-                <p className="font-semibold text-[15px]">Project Processing</p>
-                <p>
-                  Group discussion first quarter teams viral business <br />{" "}
-                  loremipsu adoption cob economy whist.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-3">
-              <Image
-                src={hand}
-                alt="anchor icon"
-                width={60}
-                className="bg-[#84A17D] p-2 rounded-[4px]"
-              />
-              <div className="">
-                <p className="font-semibold text-[15px]">Financial Solutions</p>
-                <p>
-                  Group discussion first quarter teams viral business <br />{" "}
-                  loremipsu adoption cob economy whist.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="px-16">
-          {cards.map((card, index) => {
-            return (
-              <div key={index} className="relative">
-                <Image src={card.image} alt="image" width={300} />
-              </div>
-            );
-          })}
-        </div>{" "}
-      </section>
+      <About />
+      <AboutIntro />
       <section className="justify-items-center mb-[4rem]">
         <h3 className="text-[54px] font-bold text-center my-15">
           Our team is always <br /> here for you

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { About_checks, cards } from "../data";
+import { About_checks, cards } from "../../app/data";
 import About_icon from "@/public/About_icon.svg";
 
 export default function About() {
@@ -15,7 +15,7 @@ export default function About() {
                   src={card.image}
                   alt="image"
                   className="rounded-2xl"
-                  width={300}
+                  width={350}
                 />
                 <div className="bg-[#84A17D] flex pl-2 gap-4 text-white py-3 content-between absolute bottom-10 rounded-r-full flex w-[200px]">
                   <Image src={About_icon} alt="image" className="" />
@@ -28,7 +28,7 @@ export default function About() {
             );
           })}
         </div>{" "}
-        <div className="flex px-16 flex-col w-[60%] gap-10">
+        <div className="flex px-16 flex-col w-[60%] gap-6">
           <h3 className="text-[54px] font-bold ">
             Cutting-edge solutions for finance{" "}
           </h3>
