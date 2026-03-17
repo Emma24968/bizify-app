@@ -33,7 +33,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={cn("font-mono", jetbrainsMono.variable)}>
+    <html lang="en"   suppressHydrationWarning
+ className={cn("font-mono", jetbrainsMono.variable)}>
       <body className={`${inter.className} antialiased`} >
 <header className="bg-[#FBFBFB] dark:text-[#282626] flex items-center justify-between px-10 py-4">
 
