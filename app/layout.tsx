@@ -72,7 +72,7 @@ export default function RootLayout({
     <Image src={menu} alt="menu icon" width={24} className="cursor-pointer" />
   </div>
 
-</header>     <ThemeProvider attribute='class' enableSystem defaultTheme="system">{children}</ThemeProvider>   
+</header>     <ThemeProvider attribute='class' enableSystem defaultTheme="light">{children}</ThemeProvider>   
 
 <footer className="bg-[#F4F5F6] px-16 py-14 grid grid-cols-4 gap-12">
 
