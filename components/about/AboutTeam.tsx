@@ -12,7 +12,7 @@ export default function AboutTeam() {
                   {members.map((team, index) => {
                     return (
                       <div key={index} className="rounded-lg group relative">
-                        <div className="text-center rounded-t-xl px-4 pt-4 rounded-b-xl bg-[#e3ebf3d4]">
+                        <div className="text-center rounded-t-xl pt-4 pr-4 hover:pb-4  pl-4  rounded-b-xl bg-[#e3ebf3d4]">
                           <Image
                             src={team.image}
                             alt={team.name}
@@ -21,7 +21,7 @@ export default function AboutTeam() {
                           />
                           <p className=" text-[15px] font-bold">{team.name}</p>
                           <p>{team.position}</p>
-                          <div className="flex gap-1 justify-center opacity-0 group-hover:opacity-100 transition duration-300 pb-4">
+                          <div className="flex gap-1 justify-center opacity-0 group-hover:opacity-100 transition duration-300 ">
                             <div className="bg-white hover:bg-[#84A17D] p-1 w-[36px] content-center h-[36px] rounded-[2px] text-black hover:text-white text-[13px] cursor-pointer">
                               <a href="#">FB</a>
                             </div>
