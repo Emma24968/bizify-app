@@ -7,7 +7,7 @@ import { cards } from '@/app/data';
 export default function AboutIntro() {
   return (
     <div>
-              <section className="flex bg-[#F4F5F6] dark:text-black py-16 px-15">
+              <section className="flex bg-[#F4F5F6] y-16 px-15">
                 <div className="grid gap-7">
                   {" "}
                   <h3 className="text-[54px] font-bold ">

@@ -4,7 +4,7 @@ import React from 'react'
 export default function AboutContact() {
   return (
     <div>
-              <section className="px-16 py-20 dark:bg-white dark:text-black flex gap-20">
+              <section className="px-16 py-20 flex gap-20">
         <div className="grid">
           <h3 className="text-[54px] font-bold">
             Make something <br /> awesome.

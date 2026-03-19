@@ -6,7 +6,7 @@ import About_icon from "@/public/About_icon.svg";
 export default function About() {
   return (
     <div>
-      <section className="flex py-16 dark:bg-white dark:text-black">
+      <section className="flex py-16 ">
         <div className="px-16">
           {cards.map((card, index) => {
             return (

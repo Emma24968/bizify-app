@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function AboutTeam() {
   return (
     <div>
-              <section className="justify-items-center dark:bg-white text-black pb-[4rem]">
+              <section className="justify-items-center text-black pb-[4rem]">
                 <h3 className="text-[54px] font-bold text-center py-15">
                   Our team is always <br /> here for you
                 </h3>
