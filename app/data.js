@@ -15,6 +15,12 @@ import abstract from "@/public/Abstract.png";
 import experience from "@/public/experience.svg";
 import check from "@/public/check.svg";
 import cancel from "@/public/cancel.svg";
+import risk from "@/public/risk.svg";
+import investment from "@/public/investment.svg";
+import Marketing from "@/public/Marketing.svg";
+import Planning from "@/public/Planning.svg";
+import strategy from "@/public/strategy.svg";
+import tax from "@/public/tax.svg";
 import team1 from "@/public/Team1.jpg";
 import team2 from "@/public/Team2.jpg";
 import team3 from "@/public/Team3.jpg";
@@ -33,7 +39,7 @@ import blog1 from "@/public/blog1.jpg";
 import blog2 from "@/public/blog2.jpg";
 import blog3 from "@/public/blog3.jpg";
 
-export const gallerys=[ig1,ig2,ig3,ig4,ig5,ig6]
+export const gallerys = [ig1, ig2, ig3, ig4, ig5, ig6];
 export const clients = [logo1, logo2, logo3, logo4, logo5, logo6];
 export const services = [
   {
@@ -73,10 +79,19 @@ export const checks = [
   { image: check, description: "Happy Customers" },
 ];
 export const About_checks = [
-  { image: check, description: "Created 40+ unique sections with responsiveness." },
-  { image: check, description: "You will able to build a new site with an ease." },
-  { image: check, description: "Booster is made for stay ahead from the compitition." },
-]; 
+  {
+    image: check,
+    description: "Created 40+ unique sections with responsiveness.",
+  },
+  {
+    image: check,
+    description: "You will able to build a new site with an ease.",
+  },
+  {
+    image: check,
+    description: "Booster is made for stay ahead from the compitition.",
+  },
+];
 export const teams = [
   { image: team1, name: "Brooklyn Simmons", position: "Founder" },
   { image: team3, name: "Sophia Rodriguez", position: "Creative Director" },
@@ -84,8 +99,8 @@ export const teams = [
   { image: team4, name: "Alexander Cameron", position: "Lead Developer" },
 ];
 export const members = [
-  { image: team1, name: "Brooklyn Simmons", position: 'Finance Advisor'},
-  { image: team3, name: "Sophia Rodriguez", position: 'Finance Advisor'},
+  { image: team1, name: "Brooklyn Simmons", position: "Finance Advisor" },
+  { image: team3, name: "Sophia Rodriguez", position: "Finance Advisor" },
   { image: team2, name: "Marvin McKinney", position: "Business Engr." },
 ];
 
@@ -108,7 +123,44 @@ export const projects = [
   },
 ];
 
-
+export const service = [
+  {
+    image: tax,
+    title: "Finance Planning",
+    description:
+      "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
+  },
+  {
+    image: strategy,
+    title: "Tax File Audit",
+    description:
+      "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
+  },
+  {
+    image: risk,
+    title: "Risk Management",
+    description:
+      "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
+  },
+  {
+    image: investment,
+    title: "Investment Idea",
+    description:
+      "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
+  },
+  {
+    image: Planning,
+    title: "Business Strategy",
+    description:
+      "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
+  },
+  {
+    image: Marketing,
+    title: "Marketing Strategy",
+    description:
+      "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
+  },
+];
 
 export const plans = [
   {
@@ -159,6 +211,4 @@ export const plans = [
     button: "Get Your Plan",
   },
 ];
- export const blogs=[
-  blog1,blog2,blog3
- ]
+export const blogs = [blog1, blog2, blog3];
