@@ -17,8 +17,8 @@ import check from "@/public/check.svg";
 import cancel from "@/public/cancel.svg";
 import risk from "@/public/risk.svg";
 import investment from "@/public/investment.svg";
-import Marketing from "@/public/Marketing.svg";
-import Planning from "@/public/Planning.svg";
+import marketing from "@/public/marketing.svg";
+import planning from "@/public/planning.svg";
 import strategy from "@/public/strategy.svg";
 import tax from "@/public/tax.svg";
 import team1 from "@/public/Team1.jpg";
@@ -123,15 +123,15 @@ export const projects = [
   },
 ];
 
-export const service = [
+export const serviceCards = [
   {
-    image: tax,
+    image: strategy,
     title: "Finance Planning",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
-    image: strategy,
+    image: tax,
     title: "Tax File Audit",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
@@ -149,13 +149,13 @@ export const service = [
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
-    image: Planning,
+    image: planning,
     title: "Business Strategy",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
-    image: Marketing,
+    image: marketing,
     title: "Marketing Strategy",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
