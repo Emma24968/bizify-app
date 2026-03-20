@@ -16,19 +16,12 @@ import hand from "@/public/hand.svg";
 import vector from "@/public/Vector.svg";
 import Team from "@/public/Team4.jpg";
 import Image from "next/image";
+import PageHeader from "../PageHeader";
 
 export default function About() {
   return (
     <div className=" ">
-      <section className="bg-[#153C3C] w-full py-[150px] h-[500px] text-center">
-        <h1 className="px-16 text-[70px] text-white font-bold">About Us</h1>
-        <h3 className="px-16 flex justify-center">
-          {" "}
-          <span className="text-[#fffa]">Home</span>
-          <ChevronRight className="text-white" />
-          <span className="text-white">About Us</span>
-        </h3>
-      </section>
+<PageHeader title="Home" currentPage="About"/>
       <section className="flex py-16">
         <div className="px-16">
           {cards.map((card, index) => {
