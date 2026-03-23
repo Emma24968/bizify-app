@@ -6,7 +6,7 @@ import audit from "@/public/audit.jpg";
 import { services } from '@/app/data';
 export default function Service() {
   return (
-    <div>      <section className="py-16 px-20 dark:bg-white text-black">
+    <div>      <section className="py-16 px-20 ">
             <div className="flex flex-cols-3 gap-4">
               <div className="w-[53%] justify-center">
                 <h3 className="text-5xl font-bold mb-5">
