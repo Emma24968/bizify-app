@@ -212,3 +212,23 @@ export const plans = [
   },
 ];
 export const blogs = [blog1, blog2, blog3];
+export const pricingPlans = [
+  {
+    name: "Basic Plan",
+    price: "$29",
+    tag: "Recommended",
+    highlighted: false,
+  },
+  {
+    name: "Professional Plan",
+    price: "$49",
+    tag: "Most Popular",
+    highlighted: true, 
+  },
+  {
+    name: "Enterprise Plan",
+    price: "$79",
+    tag: "Best Value",
+    highlighted: false,
+  },
+];
