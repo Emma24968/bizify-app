@@ -2,19 +2,17 @@ export default function Newsletter() {
   return (
     <section className="flex flex-col md:flex-row w-full">
 
-      {/* LEFT - VIDEO */}
       <div className="w-full md:w-1/2">
         <video
           src="/service-video.mp4"
-          autoPlay
           loop
           muted
+          autoPlay
           playsInline
           className="w-full h-full object-cover"
         />
       </div>
 
-      {/* RIGHT - CONTENT */}
       <div className="w-full md:w-1/2 bg-[#153C3C] text-white flex flex-col justify-center px-10 py-16 gap-6">
 
         <h3 className="text-3xl md:text-4xl font-bold leading-tight">
@@ -26,7 +24,6 @@ export default function Newsletter() {
           readable content of a page when looking at its layout.
         </p>
 
-        {/* INPUT + BUTTON */}
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
 
           <input
