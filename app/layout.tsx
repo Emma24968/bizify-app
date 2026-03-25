@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Unbounded, JetBrains_Mono } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { gallerys } from "@/app/data";
@@ -19,6 +20,9 @@ import ThemeToggle from "./theme-toggle";
 const jetbrainsMono = JetBrains_Mono({subsets:['latin'],variable:'--font-mono'});
 
 const inter = Unbounded({
+  subsets: ["latin"],
+});
+const manrope = Manrope({
   subsets: ["latin"],
 });
 
