@@ -217,7 +217,6 @@ export const pricingPlans = [
     name: "Basic Plan",
     price: "$29",
     tag: "Recommended",
-    highlighted: false,
   },
   {
     name: "Professional Plan",
@@ -229,6 +228,5 @@ export const pricingPlans = [
     name: "Enterprise Plan",
     price: "$79",
     tag: "Best Value",
-    highlighted: false,
   },
 ];

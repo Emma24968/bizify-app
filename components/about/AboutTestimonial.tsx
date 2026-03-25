@@ -9,12 +9,12 @@ export default function AboutTestimonial() {
     <div>
               <section className="py-16 px-16 bg-[#153C3C]">
         <div className="flex justify-between items-center mb-12">
-          <h3 className="text-[54px] font-bold">
+          <h3 className="text-[54px] text-white font-bold">
             What our clients
             <br /> say about us
           </h3>
 
-          <button className="bg-[#84a17d] text-[15px] w-[12rem] rounded-lg py-3 px-2 text-white">
+          <button className="bg-[#84a17d] text-[1px] w-[10rem] rounded-lg py-3 px-2 text-white">
             View All Reviews
           </button>
         </div>

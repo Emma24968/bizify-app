@@ -1,4 +1,5 @@
-import { Check } from "lucide-react";
+import  Check  from '@/public/check.svg';
+import Image from 'next/image';
 type Plan = {
   name: string;
   price: string;
@@ -9,14 +10,13 @@ type Plan = {
 export default function PricingCard({ plan }: { plan: Plan }) {
   return (
     <div
-      className={`rounded-2xl p-8 transition relative
+      className={`rounded-2xl p-8 transition w-[22rem] relative
       ${
         plan.highlighted
           ? "bg-gradient-to-b from-[#e8f0e8] to-[#c9d9c7] shadow-xl scale-105"
           : "bg-[#f4f5f6]"
       }`}
     >
-      {/* HEADER */}
       <div className="flex justify-between items-start mb-6">
         <div>
           <h3 className="font-semibold text-lg">{plan.name}</h3>
@@ -38,7 +38,6 @@ export default function PricingCard({ plan }: { plan: Plan }) {
 
       <hr className="mb-6" />
 
-      {/* FEATURES */}
       <div className="space-y-3 mb-8">
         {[
           "Advanced Analytics",
@@ -49,19 +48,18 @@ export default function PricingCard({ plan }: { plan: Plan }) {
           "All API Access",
         ].map((item, i) => (
           <div key={i} className="flex items-center gap-2">
-            <Check className="text-[#84A17D]" size={18} />
+            <Image src={Check} alt='check-icon' />
             <p className="text-sm">{item}</p>
           </div>
         ))}
       </div>
 
-      {/* BUTTON */}
       <button
         className={`w-full py-3 rounded-md font-medium transition
         ${
           plan.highlighted
             ? "bg-[#84A17D] text-white"
-            : "bg-[#153C3C] text-white"
+            : "bg-[#000000] text-white"
         }`}
       >
         Get The Pay Now
