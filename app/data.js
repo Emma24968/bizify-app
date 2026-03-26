@@ -20,6 +20,7 @@ import investment from "@/public/investment.svg";
 import marketing from "@/public/marketing.svg";
 import planning from "@/public/planning.svg";
 import strategy from "@/public/strategy.svg";
+import headPhone from "@/public/headPhone.svg";
 import tax from "@/public/tax.svg";
 import team1 from "@/public/Team1.jpg";
 import team2 from "@/public/Team2.jpg";
@@ -252,3 +253,11 @@ export const serviceList = [
     name: "Marketing Strategy",
   },
 ];
+
+export const contact=[{
+image:headPhone,
+  header:`Don't hesitate to get in touch with us.`,
+  description:'A content management system helps you create, manage, and publish content.',
+  button:'Get in Touch'
+}
+]
