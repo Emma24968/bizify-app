@@ -7,7 +7,7 @@ export default function Sidebar() {
     <div className="flex justify-center items-center ">
 
     <div className="w-[70%] justify-between rounded-2xl  bg-[#F4F4F4] h-[30rem] py-4 px-4 grid gap-3">
-      <h3>Service List</h3>
+      <h3  className="text-[25px]">Service List</h3>
       {serviceList.map((services, index) => {
         return (
           <div key={index} className="flex items-center gap-5">

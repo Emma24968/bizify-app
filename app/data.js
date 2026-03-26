@@ -261,3 +261,7 @@ image:headPhone,
   button:'Get in Touch'
 }
 ]
+
+export const Servicedetails=[
+  'Creating and editing content','Workflows, reporting, and content organization','User & role-based administration and security','Flexibility, scalability, and performance and analysis','Multilingual content capabilities'
+]
