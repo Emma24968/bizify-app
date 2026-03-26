@@ -127,4 +127,9 @@
   html {
     @apply font-mono;
   }
+  p {
+  font-family: var(--font-manrope);
+  font-size: 18px;
+  line-height: 1.6;
+}
 }
