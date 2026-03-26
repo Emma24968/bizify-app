@@ -1,12 +1,20 @@
-import React from 'react'
-import Details from '@/components/services/details/Details'
-import Sidebar from '@/components/services/details/Sidebar'
+import React from "react";
+import Details from "@/components/services/details/Details";
+import Sidebar from "@/components/services/details/Sidebar";
+import Contact from "@/components/services/details/Contact";
+import PageHeader from "@/app/PageHeader";
 
 export default function page() {
   return (
-    <div>
+    <div className="">
+      <PageHeader title="Services" currentPage="Service Details" />
+      <div className="flex mt-20 px-16">
         <Details />
-        <Sidebar />
+        <div>
+          <Sidebar />
+          <Contact />
+        </div>
+      </div>
     </div>
-  )
+  );
 }

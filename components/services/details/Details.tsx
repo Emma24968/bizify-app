@@ -4,10 +4,10 @@ import image from "@/public/service-image.jpg";
 
 function Details() {
   return (
-    <div>
-      <Image src={image} alt="service-image" />
-      <h3>Service Overview</h3>
-      <p>
+    <div className="w-[90%]">
+      <Image src={image} className="rounded-[10px]" alt="service-image" />
+      <h3 className="text-[40px] my-3">Service Overview</h3>
+      <p className="text-[15px] mb-3">
         Lorem ipsum is simply free text used by copytyping refreshing. Neque
         porro est qui dolorem ipsum quia var quaed inventore veritatis et quasi
         architecto beatae vitae dicta sunt explicabo. Aelltes port lacus quis
@@ -16,7 +16,7 @@ function Details() {
         industry. Lorem Ipsum has been the ndustry standard dummy text ever
         since the 1500s, when an unknown printer took.
       </p>
-      <p>
+      <p className="text-[15px] mb-3">
         When an unknown printer took a galley of type and scrambled it to make a
         type book. It leap survive not only five centurie, but also the leap
         into electronic typesetting, unchange Lorem ipsum dolor sit amet consec
