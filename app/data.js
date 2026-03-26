@@ -222,11 +222,33 @@ export const pricingPlans = [
     name: "Professional Plan",
     price: "$49",
     tag: "Most Popular",
-    highlighted: true, 
+    highlighted: true,
   },
   {
     name: "Enterprise Plan",
     price: "$79",
     tag: "Best Value",
+  },
+];
+
+export const serviceList = [
+  {
+    name: "Finance Planning",
+    highlighted: true,
+  },
+  {
+    name: "Tax File Audit",
+  },
+  {
+    name: "Risk Management",
+  },
+  {
+    name: "Investment Idea",
+  },
+  {
+    name: "Business Strategy",
+  },
+  {
+    name: "Marketing Strategy",
   },
 ];
