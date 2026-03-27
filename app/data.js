@@ -279,5 +279,5 @@ export const Servicedetails = [
 ];
 
 export const portfolios=[
-portfolio1,portfolio2,portfolio3,portfolio4,portfolio5,portfolio6
+portfolio1,portfolio2,portfolio3,project4,project3,portfolio6
 ]
