@@ -36,6 +36,12 @@ import project1 from "@/public/project1.webp";
 import project2 from "@/public/project2.webp";
 import project3 from "@/public/project3.webp";
 import project4 from "@/public/project4.webp";
+import porfolio1 from "@/public/porfolio1.webp";
+import porfolio2 from "@/public/porfolio2.webp";
+import porfolio3 from "@/public/porfolio3.webp";
+import porfolio4 from "@/public/porfolio4.webp";
+import porfolio5 from "@/public/porfolio5.webp";
+import porfolio6 from "@/public/porfolio6.webp";
 import blog1 from "@/public/blog1.jpg";
 import blog2 from "@/public/blog2.jpg";
 import blog3 from "@/public/blog3.jpg";
@@ -254,14 +260,24 @@ export const serviceList = [
   },
 ];
 
-export const contact=[{
-image:headPhone,
-  header:`Don't hesitate to get in touch with us.`,
-  description:'A content management system helps you create, manage, and publish content.',
-  button:'Get in Touch'
-}
-]
+export const contact = [
+  {
+    image: headPhone,
+    header: `Don't hesitate to get in touch with us.`,
+    description:
+      "A content management system helps you create, manage, and publish content.",
+    button: "Get in Touch",
+  },
+];
 
-export const Servicedetails=[
-  'Creating and editing content','Workflows, reporting, and content organization','User & role-based administration and security','Flexibility, scalability, and performance and analysis','Multilingual content capabilities'
+export const Servicedetails = [
+  "Creating and editing content",
+  "Workflows, reporting, and content organization",
+  "User & role-based administration and security",
+  "Flexibility, scalability, and performance and analysis",
+  "Multilingual content capabilities",
+];
+
+export const porfolios=[
+porfolio1,porfolio2,porfolio3,porfolio4,porfolio5,porfolio6
 ]
