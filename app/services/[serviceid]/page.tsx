@@ -4,7 +4,8 @@ import Sidebar from "@/components/services/details/Sidebar";
 import Contact from "@/components/services/details/Contact";
 import PageHeader from "@/app/PageHeader";
 
-export default function page() {
+export default  function Servicedetails({params,}:{params:{serviceid:string};}) {
+const serviceid= params.serviceid
   return (
     <div className="">
       <PageHeader title="Services" currentPage="Service Details" />
