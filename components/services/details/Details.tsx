@@ -45,7 +45,7 @@ function Details() {
       <p  className="text-[18px] mb-3">Cast obscure badger jeep quail congenialy when changed as cat jeepers affectionate thus facilisi goodness this far like ipsum dolor sit amet, consectetur adipisicing elits sed eiusmod tem incididunt et laboret dolore magna aliqua enim ad minim. Eveniet in vulputate esse molestie consequat, illum dolore eu feugiat nulla facilisis at seds eros sed.</p>
       {Servicedetails.map((details,index)=>{
         return(
-          <div className="flex pl-4 gap-3 items-center">
+          <div key={index} className="flex pl-4 gap-3 items-center">
             <Check />
             <p>{details}</p>
           </div>

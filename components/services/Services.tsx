@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link"; // 1. Import Link
 import { serviceCards } from "@/app/data";
 import { ArrowRight } from "lucide-react";
 
@@ -18,12 +19,17 @@ export default function Services() {
               width={70}
               className=" hover:text-white p-2 rounded-[3px] bg-[#84a17d]"
             />
-            <h3>{service.title}</h3>
+            <h3 className="font-bold">{service.title}</h3>
             <p>{service.description}</p>
-            <div className="flex items-center">
-              <button className="text-[#84a17d]">Learn more</button>
-              <ArrowRight className="text-[#84a17d]" />
-            </div>
+            
+            {/* 2. Wrap the button/arrow in a Link tag */}
+            <Link 
+              href={`/services/${service.id}`} 
+              className="flex items-center group cursor-pointer"
+            >
+              <button className="text-[#84a17d] font-medium cursor-pointer">Learn more</button>
+              <ArrowRight className="text-[#84a17d] ml-1 transition-transform group-hover:translate-x-1" />
+            </Link>
           </div>
         );
       })}

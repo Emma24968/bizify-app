@@ -132,36 +132,42 @@ export const projects = [
 
 export const serviceCards = [
   {
+    id:'strategy',
     image: strategy,
     title: "Finance Planning",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
+    id:'task',
     image: tax,
     title: "Tax File Audit",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
+    id:'risk',
     image: risk,
     title: "Risk Management",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
+    id:'investment',
     image: investment,
     title: "Investment Idea",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
+    id:'planning',
     image: planning,
     title: "Business Strategy",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
+    id:'marketing',
     image: marketing,
     title: "Marketing Strategy",
     description:
@@ -224,6 +230,7 @@ export const pricingPlans = [
     name: "Basic Plan",
     price: "$29",
     tag: "Recommended",
+    highlighted: false,
   },
   {
     name: "Professional Plan",
@@ -235,27 +242,34 @@ export const pricingPlans = [
     name: "Enterprise Plan",
     price: "$79",
     tag: "Best Value",
+    highlighted: false,
   },
 ];
 
 export const serviceList = [
   {
+    id: 'Finance Planning',
     name: "Finance Planning",
     highlighted: true,
   },
   {
+    id: 'Tax File Audit',
     name: "Tax File Audit",
   },
   {
+    id: 'Risk Management',
     name: "Risk Management",
   },
   {
+    id: 'Investment Idea',
     name: "Investment Idea",
   },
   {
+    id: 'Business Strategy',
     name: "Business Strategy",
   },
   {
+    id: 'Marketing Strategy',
     name: "Marketing Strategy",
   },
 ];
@@ -278,6 +292,11 @@ export const Servicedetails = [
   "Multilingual content capabilities",
 ];
 
-export const portfolios=[
-portfolio1,portfolio2,portfolio3,project4,project3,portfolio6
-]
+export const portfolios = [
+  portfolio1,
+  portfolio2,
+  portfolio3,
+  project4,
+  project3,
+  portfolio6,
+];

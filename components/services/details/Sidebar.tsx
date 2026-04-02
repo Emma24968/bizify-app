@@ -1,28 +1,36 @@
 import React from "react";
 import { serviceList } from "@/app/data";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Sidebar() {
   return (
     <div className="flex justify-center items-center ">
+      <div className="w-[70%] justify-between rounded-2xl bg-[#F4F4F4] h-[30rem] py-4 px-4 grid gap-3">
+        <h3 className="text-[25px]">Service List</h3>
 
-    <div className="w-[70%] justify-between rounded-2xl  bg-[#F4F4F4] h-[30rem] py-4 px-4 grid gap-3">
-      <h3  className="text-[25px]">Service List</h3>
-      {serviceList.map((services, index) => {
-        return (
-          <div key={index} className="flex items-center gap-5">
-  <button
-    className={`${
-      services.highlighted ? "bg-[#84A17D] text-white" : "bg-white" 
-    } px-4 py-2 rounded-md flex gap-6 w-[18rem] justify-between`}
-  >
-    {services.name}
-  <ArrowUpRight className={`${services.highlighted ? 'text-white':'text-black'}`}/>
-  </button>
-
-</div>
-        );
-      })}
+        {serviceList.map((services, index) => {
+          return (
+            <div key={index} className="flex items-center gap-5">
+              <Link href={`/services/${services.id}`}>
+                <button
+                  className={`${
+                    services.highlighted
+                      ? "bg-[#84A17D] text-white"
+                      : "bg-white"
+                  } px-4 py-2 rounded-md cursor-pointer flex gap-6 w-[18rem] justify-between`}
+                >
+                  {services.name}
+                  <ArrowUpRight
+                    className={`${
+                      services.highlighted ? "text-white" : "text-black"
+                    }`}
+                  />
+                </button>
+              </Link>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
