@@ -32,8 +32,7 @@ export default function HeroSection() {
         </div>
         <div className="">
           {" "}
-          <Image src={hero_image} alt="hero-image" className="object-cover" />
-        </div>
+<Image src={hero_image} alt="hero-image" width={1000} className="object-contain" />        </div>
       </section>
 </div>
   )
