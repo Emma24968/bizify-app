@@ -127,36 +127,42 @@ export const projects = [
 export const serviceCards = [
   {
     image: strategy,
+    id: "Finance Planning",
     title: "Finance Planning",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
     image: tax,
+    id: "Tax File Audit",
     title: "Tax File Audit",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
     image: risk,
+    id: "Risk Management",
     title: "Risk Management",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
     image: investment,
+    id: "Investment Idea",
     title: "Investment Idea",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
     image: planning,
+    id: "Business Strategy",
     title: "Business Strategy",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
     image: marketing,
+    id: "Marketing Strategy",
     title: "Marketing Strategy",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
@@ -234,22 +240,28 @@ export const pricingPlans = [
 
 export const serviceList = [
   {
+    id:'Finance Planning',
     name: "Finance Planning",
     highlighted: true,
   },
   {
+    id:'Tax File Audit',
     name: "Tax File Audit",
   },
   {
+    id:'Risk Management',
     name: "Risk Management",
   },
   {
+    id:'Investment Idea',
     name: "Investment Idea",
   },
   {
+    id:'Business Strategy',
     name: "Business Strategy",
   },
   {
+    id:'Marketing Strategy',
     name: "Marketing Strategy",
   },
 ];

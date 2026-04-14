@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { serviceCards } from "@/app/data";
+import { serviceList } from "@/app/data";
 import { ArrowRight } from "lucide-react";
 
 export default function Services() {
@@ -24,7 +25,7 @@ export default function Services() {
             <div className="flex items-center">
               <Link href={`/services/${service.id}`}>
                 <ArrowRight className="text-[#84a17d]" />
-                <button className="text-[#84a17d] cursor-pointer gap-2">
+                <button className="text-[#84a17d] cursor-pointer">
                   Learn more
                 </button>
               </Link>
