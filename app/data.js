@@ -127,42 +127,42 @@ export const projects = [
 export const serviceCards = [
   {
     image: strategy,
-    id: "Finance Planning",
+    id: "Finance-Planning",
     title: "Finance Planning",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
     image: tax,
-    id: "Tax File Audit",
+    id: "Tax-File-Audit",
     title: "Tax File Audit",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
     image: risk,
-    id: "Risk Management",
+    id: "Risk-Management",
     title: "Risk Management",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
     image: investment,
-    id: "Investment Idea",
+    id: "Investment-Idea",
     title: "Investment Idea",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
     image: planning,
-    id: "Business Strategy",
+    id: "Business-Strategy",
     title: "Business Strategy",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
     image: marketing,
-    id: "Marketing Strategy",
+    id: "Marketing-Strategy",
     title: "Marketing Strategy",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
@@ -224,6 +224,7 @@ export const pricingPlans = [
     name: "Basic Plan",
     price: "$29",
     tag: "Recommended",
+    highlighted:false
   },
   {
     name: "Professional Plan",
@@ -235,6 +236,7 @@ export const pricingPlans = [
     name: "Enterprise Plan",
     price: "$79",
     tag: "Best Value",
+    highlighted:false
   },
 ];
 
