@@ -131,6 +131,8 @@ export const serviceCards = [
     title: "Finance Planning",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
+          highlighted: true,
+
   },
   {
     image: tax,
