@@ -22,12 +22,12 @@ export default function Services() {
             />
             <h3>{service.title}</h3>
             <p>{service.description}</p>
-              <Link href={`/services/${service.id}`}>
-            <div className="flex items-center">
-                <button className="text-[#84a17d] cursor-pointer gap-2">
+              <Link href={`/services/${service.id.toLowerCase()}`}>
+            <div className="flex items-centergroup ">
+                <button className="text-[#84a17d] cursor-pointer  text-[12px] gap-2 hover:text-black">
                   Learn more
                 </button>
-                <ArrowRight className="text-[#84a17d]" />
+                <ArrowRight size={20} className="text-[#84a17d] cursor-pointer  hover:text-black" />
             </div>
               </Link>
           </div>
