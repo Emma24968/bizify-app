@@ -55,7 +55,7 @@ export default function RootLayout({
       </li>
 
       <li className="flex items-center gap-1 cursor-pointer">
-        <a href="#">Pages</a>
+        <a href="#">Services</a>
         <ChevronDown size={16} />
       </li>
 
