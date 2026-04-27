@@ -12,7 +12,7 @@ export default function page() {
     <div className="">
       <PageHeader title="Portfolio" currentPage="Portfolio" />
       <div className="grid grid-cols-2 gap-8 px-16 mt-10">
-        
+
         <div className="relative group hover:cursor-pointer rounded-xl overflow-hidden">
           <Image
             src={project1}
@@ -60,16 +60,16 @@ export default function page() {
             <div key={index}>
               <div className="relative group rounded-xl overflow-hidden">
                 <Image
-                  src={Portfolio}
+                  src={Portfolio.image}
                   alt="portfolio Image"
                   className="w-full h-[300px] object-cover rounded-lg"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
                 <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
-                  <p className="text-xs text-gray-300">Business Analysis</p>
+                  <p className="text-xs text-gray-300">{Portfolio.category}</p>
                   <h3 className="text-sm font-semibold">
-                    Market Research and Analysis.
+                  {Portfolio.title}
                   </h3>
                 </div>
 

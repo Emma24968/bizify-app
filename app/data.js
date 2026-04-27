@@ -293,10 +293,50 @@ export const Servicedetails = [
 ];
 
 export const portfolios = [
+<<<<<<< HEAD
   portfolio1,
   portfolio2,
   portfolio3,
   project4,
   project3,
   portfolio6,
+=======
+   {
+    id: "market-research",
+    image: portfolio3,
+    title: "Market Research and Analysis",
+    category: "Business Analysis",
+  },
+   {
+    id: "market-research",
+    image: portfolio2,
+    title: "Market Research and Analysis",
+    category: "Business Growth",
+  },
+   {
+    id: "market-research",
+    image: portfolio1,
+    title: "Market Research and Analysis",
+    category: "Business Development",
+  },
+   {
+    id: "market-research",
+    image: project4,
+    title: "Market Research and Analysis",
+    category: "Business Analysis",
+  },
+   {
+    id: "market-research",
+    image: project3,
+    title: "Market Research and Analysis",
+    category: "Business Analysis",
+  },
+   {
+    id: "market-research",
+    image: portfolio6,
+    title: "Market Research and Analysis",
+    category: "Business Analysis",
+  },
+
+>>>>>>> 17a7c52 (Fixed the projects images)
 ];
