@@ -293,14 +293,7 @@ export const Servicedetails = [
 ];
 
 export const portfolios = [
-<<<<<<< HEAD
-  portfolio1,
-  portfolio2,
-  portfolio3,
-  project4,
-  project3,
-  portfolio6,
-=======
+
    {
     id: "market-research",
     image: portfolio3,
@@ -338,5 +331,4 @@ export const portfolios = [
     category: "Business Analysis",
   },
 
->>>>>>> 17a7c52 (Fixed the projects images)
-];
+]
