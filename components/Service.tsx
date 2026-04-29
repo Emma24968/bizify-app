@@ -34,7 +34,7 @@ export default function Service() {
             </p>
             <hr className="text-[#bdb2b2c2]" />
             <div className="flex items-center">
-              <button className="text-[#84a17d]">Learn more</button>
+              <button className="text-[#84a17d] cursor-pointer">Learn more</button>
               <ArrowRight className="text-[#84a17d]" />
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function Service() {
             <h3>Audit & Assurance</h3>
             <hr className="text-[#bdb2b2c2]" />
             <div className="flex">
-              <button className="text-[#84a17d]">Learn more</button>
+              <button className="text-[#84a17d] cursor-pointer">Learn more</button>
               <ArrowRight className="text-[#84a17d]" />
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function Service() {
                 <h3>{service.title}</h3>
                 <hr className="text-[#bdb2b2c2]" />
                 <div className="flex">
-                  <button className="text-[#84a17d]">Learn more</button>
+                  <button className="text-[#84a17d] cursor-pointer">Learn more</button>
                   <ArrowRight className="text-[#84a17d]" />
                 </div>
               </div>
