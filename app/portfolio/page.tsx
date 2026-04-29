@@ -12,7 +12,6 @@ export default function page() {
     <div className="">
       <PageHeader title="Portfolio" currentPage="Portfolio" />
       <div className="grid grid-cols-2 gap-8 px-16 mt-10">
-
         <div className="relative group hover:cursor-pointer rounded-xl overflow-hidden">
           <Image
             src={project1}
@@ -57,6 +56,8 @@ export default function page() {
       <div className="grid grid-cols-3 gap-6 px-16 hover:cursor-pointer my-10">
         {portfolios.map((Portfolio, index) => {
           return (
+                    <Link href={`/portfolio/${Portfolio.id}`}>
+
             <div key={index}>
               <div className="relative group rounded-xl overflow-hidden">
                 <Image
@@ -68,9 +69,7 @@ export default function page() {
 
                 <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
                   <p className="text-xs text-gray-300">{Portfolio.category}</p>
-                  <h3 className="text-sm font-semibold">
-                  {Portfolio.title}
-                  </h3>
+                  <h3 className="text-sm font-semibold">{Portfolio.title}</h3>
                 </div>
 
                 <div className="absolute top-30 left-40 bg-[#84a17d] p-3 rounded-xl opacity-0 group-hover:opacity-100 transition duration-300">
@@ -78,6 +77,7 @@ export default function page() {
                 </div>
               </div>
             </div>
+            </Link>
           );
         })}
       </div>
