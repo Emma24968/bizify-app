@@ -293,42 +293,40 @@ export const Servicedetails = [
 ];
 
 export const portfolios = [
-
-   {
-    id: "market-research",
+  {
+    id: "market-research-analysis",
     image: portfolio3,
     title: "Market Research and Analysis",
     category: "Business Analysis",
   },
-   {
-    id: "market-research",
+  {
+    id: "market-research-growth",
     image: portfolio2,
     title: "Market Research and Analysis",
     category: "Business Growth",
   },
-   {
-    id: "market-research",
+  {
+    id: "market-research-development",
     image: portfolio1,
     title: "Market Research and Analysis",
     category: "Business Development",
   },
-   {
-    id: "market-research",
+  {
+    id: "finance-audit",
     image: project4,
-    title: "Market Research and Analysis",
+    title: "Finance & Audit",
     category: "Business Analysis",
   },
-   {
-    id: "market-research",
+  {
+    id: "strategy-planning",
     image: project3,
-    title: "Market Research and Analysis",
+    title: "Strategy Planning",
     category: "Business Analysis",
   },
-   {
-    id: "market-research",
+  {
+    id: "consulting-services",
     image: portfolio6,
-    title: "Market Research and Analysis",
+    title: "Consulting Services",
     category: "Business Analysis",
   },
-
-]
+];
