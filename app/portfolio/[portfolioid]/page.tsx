@@ -2,6 +2,7 @@ import { portfolios } from "@/app/data";
 import Image from "next/image";
 import webdev from "@/public/web-dev.jpg";
 import market from "@/public/market.jpg";
+import ProjectInfoCard from "@/components/portfolio/ProjectInfoCard";
 
 type Props = {
   params: Promise<{
@@ -77,7 +78,7 @@ export default async function ProjectDetails({ params }: Props) {
         infrastructure projects. prestigious buildings and
         transformational.{" "}
       </p>
-      
+      <ProjectInfoCard />
     </div>
   );
 }
