@@ -281,3 +281,15 @@ image:headPhone,
 export const Servicedetails=[
   'Creating and editing content','Workflows, reporting, and content organization','User & role-based administration and security','Flexibility, scalability, and performance and analysis','Multilingual content capabilities'
 ]
+export const Teams = [
+  { image: team1, name: "Brooklyn Simmons", position: "Founder" },
+  { image: team3, name: "Sophia Rodriguez", position: "Creative Director" },
+  { image: team2, name: "Marvin McKinney", position: "Product Designer" },
+  { image: team4, name: "Alexander Cameron", position: "Lead Developer" },
+  { image: amy, name: "Alexander Cameron", position: "Lead Developer" },
+  { image: christy, name: "Alexander Cameron", position: "Lead Developer" },
+  { image: juan, name: "Alexander Cameron", position: "Lead Developer" },
+  { image: mizan, name: "Alexander Cameron", position: "Lead Developer" },
+  { image: sofia, name: "Alexander Cameron", position: "Lead Developer" },
+  { image: tony, name: "Alexander Cameron", position: "Lead Developer" },
+];
