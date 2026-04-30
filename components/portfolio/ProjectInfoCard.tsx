@@ -1,10 +1,10 @@
-import { User, Grid3X3, Calendar, MapPin } from "lucide-react";
+import { User, LayoutGrid, CalendarClock, MapPin } from "lucide-react";
 
 export default function ProjectInfoCard() {
   return (
     <div className="w-[320px] rounded-2xl overflow-hidden border border-[#2a3b3b] bg-[#0f1f1f] text-white shadow-lg">
     
-      <div className="bg-[#6f8f78] px-4 py-3">
+      <div className="bg-[#84A17D] px-4 py-3">
         <h2 className="text-sm font-semibold text-white">
           Project information
         </h2>
@@ -12,7 +12,7 @@ export default function ProjectInfoCard() {
       <div className="p-4 space-y-5">
         
         <div className="flex items-start gap-3">
-          <div className="p-2 rounded-lg bg-[#1b2c2c]">
+          <div className="p-2 rounded-full bg-[white]">
             <User size={18} className="text-[#9fb3a8]" />
           </div>
           <div>
@@ -22,8 +22,8 @@ export default function ProjectInfoCard() {
         </div>
 
         <div className="flex items-start gap-3">
-          <div className="p-2 rounded-lg bg-[#1b2c2c]">
-            <Grid3X3 size={18} className="text-[#9fb3a8]" />
+          <div className="p-2 rounded-full bg-[white]">
+            <LayoutGrid size={18} className="text-[#9fb3a8]" />
           </div>
           <div>
             <p className="text-xs text-gray-400">Category</p>
@@ -32,8 +32,8 @@ export default function ProjectInfoCard() {
         </div>
 
         <div className="flex items-start gap-3">
-          <div className="p-2 rounded-lg bg-[#1b2c2c]">
-            <Calendar size={18} className="text-[#9fb3a8]" />
+          <div className="p-2 rounded-full bg-[white]">
+            <CalendarClock size={18} className="text-[#9fb3a8]" />
           </div>
           <div>
             <p className="text-xs text-gray-400">Date</p>
@@ -42,7 +42,7 @@ export default function ProjectInfoCard() {
         </div>
 
         <div className="flex items-start gap-3">
-          <div className="p-2 rounded-lg bg-[#1b2c2c]">
+          <div className="p-2 rounded-full bg-[white]">
             <MapPin size={18} className="text-[#9fb3a8]" />
           </div>
           <div>
