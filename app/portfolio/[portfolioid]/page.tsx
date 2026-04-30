@@ -26,7 +26,7 @@ export default async function ProjectDetails({ params }: Props) {
         alt="service-image"
       />
       <h3 className="text-[30px] my-3">{project.title}</h3>
-      <p className="text-[18px] mb-3">
+      <p className="text-[16px] mb-3">
         User experience design includes elements of interaction design, visual
         design, informati architecture, user research, and other disciplines,
         and is concerned with all facts of overall experience delivered use
@@ -34,13 +34,13 @@ export default async function ProjectDetails({ params }: Props) {
         treatment interface elements is perceived as the visual design. Graphic
         treatment interface elements is perceived
       </p>
-      <p className="text-[18px] mb-3">
+      <p className="text-[16px] mb-3">
         Test your ideas with minimal risk. Test even the most complex ideas,
         involving emerging technologies – like blockchain – with the help of our
         expert Outsourceo team. We’ll help a prediction roadmapping and post-PoC
         Development analysis{" "}
       </p>
-      <div className=" flex gap-7 py-8">
+      <div className=" flex gap-7 py-6">
         <Image
           src={webdev}
           width={320}
@@ -54,22 +54,22 @@ export default async function ProjectDetails({ params }: Props) {
           alt="dev image"
         />
       </div>
-      <p className="text-[18px] mb-3">
+      <p className="text-[16px] mb-3">
         When an unknown printer took a galley of type and scrambled it to make a
         type book. It has leap survive not only five centurie, but also the leap
         into electronic typesetting essentiall dolor unchange Lorem ipsum dolor
         sit amet consec tetur adipis icing elit.
       </p>
 
-      <h3 className="text-[30px] my-3">Challenge & solution </h3>
-      <p className="text-[18px] mb-3">
+      <h3 className="text-[25px] my-3">Challenge & solution </h3>
+      <p className="text-[16px] mb-3">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud ullamco laboris nisi ut aliquip ex commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate.
       </p>
-      <h3 className="text-[30px] my-3">Final result</h3>
-      <p className="text-[18px] mb-3">
+      <h3 className="text-[25px] my-3">Final result</h3>
+      <p className="text-[16px] mb-3">
         For almost 50 years Leighton Asia, one of the region’s largest and most
         respected constr companies, has been progressively building for a better
         future by leveraging international expertise intelligence. In that time
@@ -77,6 +77,7 @@ export default async function ProjectDetails({ params }: Props) {
         infrastructure projects. prestigious buildings and
         transformational.{" "}
       </p>
+      
     </div>
   );
 }
