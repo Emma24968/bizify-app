@@ -295,6 +295,6 @@ export const Teams = [
   { image: christy, name: "Megan Oustin", position: "Human Resources Manager" },
   { image: juan, name: "Juan Boone", position: "Capabilities Leader" },
   { image: mizan, name: "Dora Schwartz", position: "Chief Executive Officer" },
-  { image: sofia, name: "Charlotte Sophia", position: "CEO Herrington Consulting Company" },
+  { image: sofia, name: "Charlotte Sophia", position: "CEO  Consulting Company" },
   { image: tony, name: "Juhani Pallasmaa", position: "Senior Consulting Developer" },
 ];
