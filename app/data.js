@@ -26,6 +26,12 @@ import team1 from "@/public/Team1.jpg";
 import team2 from "@/public/Team2.jpg";
 import team3 from "@/public/Team3.jpg";
 import team4 from "@/public/Team4.jpg";
+import christy from "@/public/christy.jpg";
+import juan from "@/public/juan.jpg";
+import mizan from "@/public/mizan.jpg";
+import sofia from "@/public/sofia.jpg";
+import tony from "@/public/tony.jpg";
+import amy from "@/public/amy.jpg";
 import ig1 from "@/public/ig1.jpg";
 import ig2 from "@/public/ig2.jpg";
 import ig4 from "@/public/ig4.jpg";
@@ -282,14 +288,13 @@ export const Servicedetails=[
   'Creating and editing content','Workflows, reporting, and content organization','User & role-based administration and security','Flexibility, scalability, and performance and analysis','Multilingual content capabilities'
 ]
 export const Teams = [
-  { image: team1, name: "Brooklyn Simmons", position: "Founder" },
   { image: team3, name: "Sophia Rodriguez", position: "Creative Director" },
   { image: team2, name: "Marvin McKinney", position: "Product Designer" },
   { image: team4, name: "Alexander Cameron", position: "Lead Developer" },
-  { image: amy, name: "Alexander Cameron", position: "Lead Developer" },
-  { image: christy, name: "Alexander Cameron", position: "Lead Developer" },
-  { image: juan, name: "Alexander Cameron", position: "Lead Developer" },
-  { image: mizan, name: "Alexander Cameron", position: "Lead Developer" },
-  { image: sofia, name: "Alexander Cameron", position: "Lead Developer" },
-  { image: tony, name: "Alexander Cameron", position: "Lead Developer" },
+  { image: amy, name: "Leslie Alexander", position: "Finance Advisor" },
+  { image: christy, name: "Megan Oustin", position: "Human Resources Manager" },
+  { image: juan, name: "Juan Boone", position: "Capabilities Leader" },
+  { image: mizan, name: "Dora Schwartz", position: "Chief Executive Officer" },
+  { image: sofia, name: "Charlotte Sophia", position: "CEO Herrington Consulting Company" },
+  { image: tony, name: "Juhani Pallasmaa", position: "Senior Consulting Developer" },
 ];
