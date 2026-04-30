@@ -4,7 +4,7 @@ import webdev from "@/public/web-dev.jpg";
 import market from "@/public/market.jpg";
 import ProjectInfoCard from "@/components/portfolio/ProjectInfoCard";
 import CTA from "@/components/CTA";
-
+import { notFound } from "next/navigation";
 type Props = {
   params: Promise<{
     portfolioid: string;
@@ -17,8 +17,8 @@ export default async function ProjectDetails({ params }: Props) {
   const project = portfolios.find((item) => item.id === portfolioid);
 
   if (!project) {
-    return <div>Project not found</div>;
-  }
+  notFound();
+}
 
   return (
     <div className="w-full">
