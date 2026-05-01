@@ -288,13 +288,58 @@ export const Servicedetails=[
   'Creating and editing content','Workflows, reporting, and content organization','User & role-based administration and security','Flexibility, scalability, and performance and analysis','Multilingual content capabilities'
 ]
 export const Teams = [
-  { image: team3, name: "Sophia Rodriguez", position: "Creative Director" },
-  { image: team2, name: "Marvin McKinney", position: "Product Designer" },
-  { image: team4, name: "Alexander Cameron", position: "Lead Developer" },
-  { image: amy, name: "Leslie Alexander", position: "Finance Advisor" },
-  { image: christy, name: "Megan Oustin", position: "Human Resources Manager" },
-  { image: juan, name: "Juan Boone", position: "Capabilities Leader" },
-  { image: mizan, name: "Dora Schwartz", position: "Chief Executive Officer" },
-  { image: sofia, name: "Charlotte Sophia", position: "CEO  Consulting Company" },
-  { image: tony, name: "Juhani Pallasmaa", position: "Senior Consulting Developer" },
+  { 
+    id: "sophia-rodriguez", 
+    image: team3, 
+    name: "Sophia Rodriguez", 
+    position: "Creative Director" 
+  },
+  { 
+    id: "marvin-mckinney", 
+    image: team2, 
+    name: "Marvin McKinney", 
+    position: "Product Designer" 
+  },
+  { 
+    id: "alexander-cameron", 
+    image: team4, 
+    name: "Alexander Cameron", 
+    position: "Lead Developer" 
+  },
+  { 
+    id: "leslie-alexander", 
+    image: amy, 
+    name: "Leslie Alexander", 
+    position: "Finance Advisor" 
+  },
+  { 
+    id: "megan-oustin", 
+    image: christy, 
+    name: "Megan Oustin", 
+    position: "Human Resources Manager" 
+  },
+  { 
+    id: "juan-boone", 
+    image: juan, 
+    name: "Juan Boone", 
+    position: "Capabilities Leader" 
+  },
+  { 
+    id: "dora-schwartz", 
+    image: mizan, 
+    name: "Dora Schwartz", 
+    position: "Chief Executive Officer" 
+  },
+  { 
+    id: "charlotte-sophia", 
+    image: sofia, 
+    name: "Charlotte Sophia", 
+    position: "CEO Consulting Company" 
+  },
+  { 
+    id: "juhani-pallasmaa", 
+    image: tony, 
+    name: "Juhani Pallasmaa", 
+    position: "Senior Consulting Developer" 
+  },
 ];

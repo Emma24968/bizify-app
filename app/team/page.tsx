@@ -10,7 +10,7 @@ export default function page() {
       <div className="grid grid-cols-3 px-15 py-15 gap-9">
         {Teams.map((board, index) => {
           return (
-            <Link href={`team/${board.name}`}>
+            <Link href={`team/${board.id}`}>
             <div key={index} className="rounded-lg group relative">
               <div className="text-center rounded-t-xl px-4  pt-4 rounded-b-xl bg-[#e3ebf3d4]">
                 <Image
