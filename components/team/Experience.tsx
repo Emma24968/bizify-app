@@ -1,4 +1,5 @@
 import React from "react";
+import { skills } from "@/app/data";
 
 type Skill = {
   name: string;

@@ -26,7 +26,6 @@ export default async function TeamDetails({ params }: Props) {
     <div className="bg-[#f7f7f7] py-16">
       <div className="max-w-6xl mx-auto px-6 lg:px-16">
         <div className="flex flex-col lg:flex-row gap-12">
-          {/* Image */}
           <div className="w-full lg:w-[40%]">
             <Image
               src={board.image}
@@ -37,7 +36,6 @@ export default async function TeamDetails({ params }: Props) {
             />
           </div>
 
-          {/* Content */}
           <div className="w-full lg:w-[60%] flex flex-col gap-6">
             <div>
               <h2 className="text-3xl font-bold text-[#1f2a2a]">
@@ -53,7 +51,6 @@ export default async function TeamDetails({ params }: Props) {
               fermentum cubilia.
             </p>
 
-            {/* Contact */}
             <div className="flex flex-col gap-3 text-sm">
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-[#6c8b6f]" />
@@ -67,8 +64,9 @@ export default async function TeamDetails({ params }: Props) {
             </div>
 
             <Social />
-<SkillSection />
-            <ContactForm />
+<SkillSection skills={board.skills}
+  
+/>            <ContactForm />
           </div>
         </div>
       </div>

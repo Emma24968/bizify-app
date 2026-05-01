@@ -292,55 +292,100 @@ export const Teams = [
     id: "sophia-rodriguez", 
     image: team3, 
     name: "Sophia Rodriguez", 
-    position: "Creative Director" 
+    position: "Creative Director" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
   },
   { 
     id: "marvin-mckinney", 
     image: team2, 
     name: "Marvin McKinney", 
-    position: "Product Designer" 
+    position: "Product Designer" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
   },
   { 
     id: "alexander-cameron", 
     image: team4, 
     name: "Alexander Cameron", 
-    position: "Lead Developer" 
+    position: "Lead Developer" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
   },
   { 
     id: "leslie-alexander", 
     image: amy, 
     name: "Leslie Alexander", 
-    position: "Finance Advisor" 
+    position: "Finance Advisor" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
   },
   { 
     id: "megan-oustin", 
     image: christy, 
     name: "Megan Oustin", 
-    position: "Human Resources Manager" 
+    position: "Human Resources Manager" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
   },
   { 
     id: "juan-boone", 
     image: juan, 
     name: "Juan Boone", 
-    position: "Capabilities Leader" 
+    position: "Capabilities Leader" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
   },
   { 
     id: "dora-schwartz", 
     image: mizan, 
     name: "Dora Schwartz", 
-    position: "Chief Executive Officer" 
+    position: "Chief Executive Officer" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
   },
   { 
     id: "charlotte-sophia", 
     image: sofia, 
     name: "Charlotte Sophia", 
-    position: "CEO Consulting Company" 
+    position: "CEO Consulting Company" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
   },
   { 
     id: "juhani-pallasmaa", 
     image: tony, 
     name: "Juhani Pallasmaa", 
-    position: "Senior Consulting Developer" 
+    position: "Senior Consulting Developer" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
   },
 ];
 
