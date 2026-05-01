@@ -343,3 +343,9 @@ export const Teams = [
     position: "Senior Consulting Developer" 
   },
 ];
+
+export const skills=[
+    { name: "Productivity", value: "90%" },
+    { name: "Digital Marketing", value: "80%" },
+    { name: "Technology", value: "85%" },
+  ]
