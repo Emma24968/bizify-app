@@ -2,6 +2,7 @@ import React from 'react'
 import { Teams } from '@/app/data'
 import { Mail, Phone } from 'lucide-react'
 import Social from '@/components/team/Social'
+import ContactForm from '@/components/team/Contact'
 type Props={
   params:Promise<{teamid:string}>
 }
@@ -20,6 +21,7 @@ export default async function TeamDetails({params}:Props) {
     <Phone /><p>216-564-3678</p>
     <Mail /><p>{board.name.toLowerCase().replace(/\s+/g, '')}@gmail.com</p>
     <Social />
+    <ContactForm />
     </div>
   )
 }
