@@ -2,6 +2,7 @@ import React from "react";
 import { Teams } from "../data";
 import Image from "next/image";
 import CTA from "@/components/CTA";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -9,6 +10,7 @@ export default function page() {
       <div className="grid grid-cols-3 px-15 py-15 gap-9">
         {Teams.map((board, index) => {
           return (
+            <Link href={`team/${board.name}`}>
             <div key={index} className="rounded-lg group relative">
               <div className="text-center rounded-t-xl px-4  pt-4 rounded-b-xl bg-[#e3ebf3d4]">
                 <Image
@@ -34,6 +36,7 @@ export default function page() {
                 </div>
               </div>
             </div>
+            </Link>
           );
         })}
       </div>
