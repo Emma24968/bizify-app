@@ -1,8 +1,8 @@
 import PageHeader from '@/app/PageHeader'
 import React from 'react'
-import Plan from '../Plan'
-import Newsletter from '../services/Newsletter'
-import CTA from '../CTA'
+import Plan from '../../components/Plan'
+import Newsletter from '../../components/services/Newsletter'
+import CTA from '../../components/CTA'
 
 export default function Pricing() {
   return (
