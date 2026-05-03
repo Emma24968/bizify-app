@@ -394,3 +394,17 @@ export const skills=[
     { name: "Digital Marketing", value: "80%" },
     { name: "Technology", value: "85%" },
   ]
+  export const faqs=[
+    {
+      question:'How to choose health insurance?',
+      answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
+    },
+    {
+      question:'How does life insurance help my family?',
+      answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
+    },
+    {
+      question:'Essential types of business insurance?',
+      answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
+    },
+  ]
