@@ -3,10 +3,13 @@ import { Teams } from "../data";
 import Image from "next/image";
 import CTA from "@/components/CTA";
 import Link from "next/link";
+import PageHeader from "../PageHeader";
 
 export default function page() {
   return (
     <div className="">
+            <PageHeader title="Home" currentPage="Team"  />
+      
       <div className="grid grid-cols-3 px-15 py-15 gap-9">
         {Teams.map((board, index) => {
           return (

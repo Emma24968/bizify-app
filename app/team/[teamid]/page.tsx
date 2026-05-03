@@ -6,6 +6,7 @@ import ContactForm from "@/components/team/Contact";
 import Image from "next/image";
 import CTA from "@/components/CTA";
 import SkillSection from "@/components/team/Experience";
+import PageHeader from "@/app/PageHeader";
 
 type Props = {
   params: Promise<{ teamid: string }>;
@@ -23,9 +24,10 @@ export default async function TeamDetails({ params }: Props) {
   const email = `${board.name.toLowerCase().replace(/\s+/g, "")}@gmail.com`;
 
   return (
-    <div className="bg-[#fff] py-16">
-      <div className="max-w-6xl mx-auto px-6 lg:px-16">
-        <div className="flex flex-col lg:flex-row gap-12">
+    <div className="bg-[#fff]  py-16">
+      <PageHeader title="Home" currentPage="Team Details"  />
+      <div className="max-w-6xl mx-auto  ">
+        <div className="flex flex-col py-16 lg:flex-row gap-12">
           <div className="w-full lg:w-[40%]">
             <Image
               src={board.image}
