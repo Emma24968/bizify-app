@@ -137,8 +137,7 @@ export const serviceCards = [
     title: "Finance Planning",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
-          highlighted: true,
-
+    highlighted: true,
   },
   {
     image: tax,
@@ -232,7 +231,7 @@ export const pricingPlans = [
     name: "Basic Plan",
     price: "$29",
     tag: "Recommended",
-    highlighted:false
+    highlighted: false,
   },
   {
     name: "Professional Plan",
@@ -244,143 +243,149 @@ export const pricingPlans = [
     name: "Enterprise Plan",
     price: "$79",
     tag: "Best Value",
-    highlighted:false
+    highlighted: false,
   },
 ];
 
 export const serviceList = [
   {
-    id:'Finance Planning',
+    id: "Finance Planning",
     name: "Finance Planning",
     highlighted: true,
   },
   {
-    id:'Tax File Audit',
+    id: "Tax File Audit",
     name: "Tax File Audit",
   },
   {
-    id:'Risk Management',
+    id: "Risk Management",
     name: "Risk Management",
   },
   {
-    id:'Investment Idea',
+    id: "Investment Idea",
     name: "Investment Idea",
   },
   {
-    id:'Business Strategy',
+    id: "Business Strategy",
     name: "Business Strategy",
   },
   {
-    id:'Marketing Strategy',
+    id: "Marketing Strategy",
     name: "Marketing Strategy",
   },
 ];
 
-export const contact=[{
-image:headPhone,
-  header:`Don't hesitate to get in touch with us.`,
-  description:'A content management system helps you create, manage, and publish content.',
-  button:'Get in Touch'
-}
-]
+export const contact = [
+  {
+    image: headPhone,
+    header: `Don't hesitate to get in touch with us.`,
+    description:
+      "A content management system helps you create, manage, and publish content.",
+    button: "Get in Touch",
+  },
+];
 
-export const Servicedetails=[
-  'Creating and editing content','Workflows, reporting, and content organization','User & role-based administration and security','Flexibility, scalability, and performance and analysis','Multilingual content capabilities'
-]
+export const Servicedetails = [
+  "Creating and editing content",
+  "Workflows, reporting, and content organization",
+  "User & role-based administration and security",
+  "Flexibility, scalability, and performance and analysis",
+  "Multilingual content capabilities",
+];
 export const Teams = [
-  { 
-    id: "sophia-rodriguez", 
-    image: team3, 
-    name: "Sophia Rodriguez", 
-    position: "Creative Director" ,
+  {
+    id: "sophia-rodriguez",
+    image: team3,
+    name: "Sophia Rodriguez",
+    position: "Creative Director",
     skills: [
       { name: "React", value: "95%" },
       { name: "JavaScript", value: "90%" },
       { name: "UI Design", value: "75%" },
     ],
   },
-  { 
-    id: "marvin-mckinney", 
-    image: team2, 
-    name: "Marvin McKinney", 
-    position: "Product Designer" ,
+  {
+    id: "marvin-mckinney",
+    image: team2,
+    name: "Marvin McKinney",
+    position: "Product Designer",
     skills: [
       { name: "React", value: "95%" },
       { name: "JavaScript", value: "90%" },
       { name: "UI Design", value: "75%" },
     ],
   },
-  { 
-    id: "alexander-cameron", 
-    image: team4, 
-    name: "Alexander Cameron", 
-    position: "Lead Developer" ,
+  {
+    id: "alexander-cameron",
+    image: team4,
+    name: "Alexander Cameron",
+    position: "Lead Developer",
     skills: [
       { name: "React", value: "95%" },
       { name: "JavaScript", value: "90%" },
       { name: "UI Design", value: "75%" },
     ],
   },
-  { 
-    id: "leslie-alexander", 
-    image: amy, 
-    name: "Leslie Alexander", 
-    position: "Finance Advisor" ,
+  {
+    id: "leslie-alexander",
+    image: amy,
+    name: "Leslie Alexander",
+    position: "Finance Advisor",
     skills: [
       { name: "React", value: "95%" },
       { name: "JavaScript", value: "90%" },
       { name: "UI Design", value: "75%" },
     ],
   },
-  { 
-    id: "megan-oustin", 
-    image: christy, 
-    name: "Megan Oustin", 
-    position: "Human Resources Manager" ,
+  {
+    id: "megan-oustin",
+    image: christy,
+    name: "Megan Oustin",
+    position: "Human Resources Manager",
     skills: [
       { name: "React", value: "95%" },
       { name: "JavaScript", value: "90%" },
       { name: "UI Design", value: "75%" },
     ],
   },
-  { 
-    id: "juan-boone", 
-    image: juan, 
-    name: "Juan Boone", 
-    position: "Capabilities Leader" ,
+  {
+    id: "juan-boone",
+    image: juan,
+    name: "Juan Boone",
+    position: "Capabilities Leader",
     skills: [
       { name: "React", value: "95%" },
       { name: "JavaScript", value: "90%" },
       { name: "UI Design", value: "75%" },
     ],
   },
-  { 
-    id: "dora-schwartz", 
-    image: mizan, 
-    name: "Dora Schwartz", 
-    position: "Chief Executive Officer" ,
+  {
+    id: "dora-schwartz",
+    image: mizan,
+    name: "Dora Schwartz",
+    position: "Chief Executive Officer",
     skills: [
       { name: "React", value: "95%" },
       { name: "JavaScript", value: "90%" },
       { name: "UI Design", value: "75%" },
     ],
   },
-  { 
-    id: "charlotte-sophia", 
-    image: sofia, 
-    name: "Charlotte Sophia", 
-    position: "CEO Consulting Company" ,
+  {
+    id: "charlotte-sophia",
+    image: sofia,
+    name: "Charlotte Sophia",
+    position: "CEO Consulting Company",
     skills: [
       { name: "React", value: "95%" },
       { name: "JavaScript", value: "90%" },
       { name: "UI Design", value: "75%" },
     ],
   },
-  { 
-    id: "juhani-pallasmaa", 
-    image: tony, 
-    name: "Juhani Pallasmaa", 
-    position: "Senior Consulting Developer" ,
+  {
+    id: "juhani-pallasmaa",
+    image: tony,
+    name: "Juhani Pallasmaa",
+    position: "Senior Consulting Developer",
     skills: [
       { name: "React", value: "95%" },
       { name: "JavaScript", value: "90%" },
@@ -389,22 +394,67 @@ export const Teams = [
   },
 ];
 
-export const skills=[
-    { name: "Productivity", value: "90%" },
-    { name: "Digital Marketing", value: "80%" },
-    { name: "Technology", value: "85%" },
-  ]
-  export const faqs=[
-    {
-      question:'How to choose health insurance?',
-      answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
-    },
-    {
-      question:'How does life insurance help my family?',
-      answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
-    },
-    {
-      question:'Essential types of business insurance?',
-      answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
-    },
-  ]
+export const skills = [
+  { name: "Productivity", value: "90%" },
+  { name: "Digital Marketing", value: "80%" },
+  { name: "Technology", value: "85%" },
+];
+export const faqs = [
+  {
+    question: "How to choose health insurance?",
+    answer: `If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
+  },
+  {
+    question: "How does life insurance help my family?",
+    answer: `If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
+  },
+  {
+    question: "Essential types of business insurance?",
+    answer: `If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
+  },
+];
+
+export const Testimonial = [
+  {
+    id: "sophia-rodriguez",
+    image: team3,
+    name: "Sophia Rodriguez",
+    position: "Creative Director",
+    text: "“ Working with several word themes and templates the last years only can say this is best in every level use it for my reviews that I have already ar company and the reviews that I have already are all excellent and the reviews code ”",
+  },
+  {
+    id: "marvin-mckinney",
+    image: team2,
+    name: "Marvin McKinney",
+    position: "Product Designer",
+    text: "“ Working with several word themes and templates the last years only can say this is best in every level use it for my reviews that I have already ar company and the reviews that I have already are all excellent and the reviews code ”",
+  },
+  {
+    id: "alexander-cameron",
+    image: team4,
+    name: "Alexander Cameron",
+    position: "Lead Developer",
+    text: "“ Working with several word themes and templates the last years only can say this is best in every level use it for my reviews that I have already ar company and the reviews that I have already are all excellent and the reviews code ”",
+  },
+  {
+    id: "leslie-alexander",
+    image: amy,
+    name: "Leslie Alexander",
+    position: "Finance Advisor",
+    text: "“ Working with several word themes and templates the last years only can say this is best in every level use it for my reviews that I have already ar company and the reviews that I have already are all excellent and the reviews code ”",
+  },
+  {
+    id: "megan-oustin",
+    image: christy,
+    name: "Megan Oustin",
+    position: "Human Resources Manager",
+    text: "“ Working with several word themes and templates the last years only can say this is best in every level use it for my reviews that I have already ar company and the reviews that I have already are all excellent and the reviews code ”",
+  },
+  {
+    id: "juan-boone",
+    image: juan,
+    name: "Juan Boone",
+    position: "Capabilities Leader",
+    text: "“ Working with several word themes and templates the last years only can say this is best in every level use it for my reviews that I have already ar company and the reviews that I have already are all excellent and the reviews code ”",
+  },
+];
