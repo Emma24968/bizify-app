@@ -414,7 +414,7 @@ export const faqs = [
   },
 ];
 
-export const Testimonial = [
+export const Testimonials = [
   {
     id: "sophia-rodriguez",
     image: team3,
