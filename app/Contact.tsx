@@ -13,6 +13,7 @@ export default function Contact({header,details,info,icon}:ContactProps) {
         <h3>{header}</h3>
         <p>{details}</p>
         <p>{info}</p>
+        <div>{icon}</div>
     </div>
   )
 }
