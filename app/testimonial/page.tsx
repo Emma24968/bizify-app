@@ -4,13 +4,14 @@ import { Testimonials } from "../data";
 import { Star } from "lucide-react";
 import Image from "next/image";
 import quote from "@/public/Icon.svg";
+import CTA from "@/components/CTA";
 
 export default function Testimonial() {
   return (
     <div>
       <PageHeader title="Home" currentPage="Testimonial" />
 
-      <section className="bg-[#f7f7f7] py-16">
+      <section className="bg-[#fff] py-16">
         <div className="max-w-6xl mx-auto px-6 lg:px-16">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {Testimonials.map((testimonial, index) => (
@@ -63,6 +64,7 @@ export default function Testimonial() {
           </div>
         </div>
       </section>
+      <CTA />
     </div>
   );
 }
