@@ -2,15 +2,19 @@ import React from "react";
 import Image from "next/image";
 import { blogpost } from "../data";
 import { ArrowRight, Dot } from "lucide-react";
+import PageHeader from "../PageHeader";
+import CTA from "@/components/CTA";
 
 export default function page() {
   return (
-    <div className="grid grid-cols-3">
+    <div className="">
+        <PageHeader currentPage="BLOG" title="HOME" />
+    <div className="grid grid-cols-3 py-16 px-16 justify-items-center">
       {blogpost.map((blog, index) => {
         return (
-          <div key={index}>
-            <Image src={blog.image} alt="" width={150} />
-            <div>
+          <div key={index} className="w-[20rem] rounded pb-3">
+            <Image src={blog.image} alt="" width={320} />
+            <div className="bg-[#F4F5F6] p-4">
               <div className="flex items-center">
                 <p className="text-[#3F4E50] font-light">Consulting</p>
                 <Dot />
@@ -31,6 +35,8 @@ export default function page() {
           </div>
         );
       })}
+    </div>
+    <CTA />
     </div>
   );
 }
