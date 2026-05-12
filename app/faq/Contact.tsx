@@ -9,11 +9,14 @@ type ContactProps={
 }
 export default function Contact({header,details,info,icon}:ContactProps) {
   return (
-    <div>
+    <div className='bg-[#F4F5F6] p-4 rounded w-[30rem]'>
+        <div className=" flex justify-between ">
         <h3>{header}</h3>
+        <div>{icon}</div>
+
+        </div>
         <p>{details}</p>
         <p>{info}</p>
-        <div>{icon}</div>
     </div>
   )
 }
