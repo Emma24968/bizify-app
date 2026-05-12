@@ -474,12 +474,12 @@ export const blogpost=[
   image:budget
 },
 {
-  title:'Top 5 Benefits of Auto Finance Coverage',
-  image:crypto
-},
-{
   title:'How to Craft The Perfect Web Design and Developer',
   image:deployment
+},
+{
+  title:'Top 5 Benefits of Auto Finance Coverage',
+  image:crypto
 },
 {
   title:'Building Your Own Personal Learning Curriculum',
