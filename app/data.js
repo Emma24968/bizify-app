@@ -42,6 +42,15 @@ import project1 from "@/public/project1.webp";
 import project2 from "@/public/project2.webp";
 import project3 from "@/public/project3.webp";
 import project4 from "@/public/project4.webp";
+import budget from "@/public/budget.webp";
+import wallet from "@/public/wallet.webp";
+import automation from "@/public/automation.webp";
+import intergration from "@/public/intergration.webp";
+import tasks from "@/public/tasks.webp";
+import developer from "@/public/developer.webp";
+import deployment from "@/public/deployment.webp";
+import data from "@/public/data.webp";
+import crypto from "@/public/crypto.webp";
 import blog1 from "@/public/blog1.jpg";
 import blog2 from "@/public/blog2.jpg";
 import blog3 from "@/public/blog3.jpg";
@@ -458,3 +467,42 @@ export const Testimonials = [
     text: "“ Working with several word themes and templates the last years only can say this is best in every level use it for my reviews that I have already ar company and the reviews that I have already are all excellent and the reviews code ”",
   },
 ];
+
+export const blogpost=[
+{
+  title:'Top 5 Benefits of Auto Finance Coverage',
+  image:budget
+},
+{
+  title:'Top 5 Benefits of Auto Finance Coverage',
+  image:crypto
+},
+{
+  title:'How to Craft The Perfect Web Design and Developer',
+  image:deployment
+},
+{
+  title:'Building Your Own Personal Learning Curriculum',
+  image:data
+},
+{
+  title:'Seven Mistakes to Avoid in Your Technical Interviews',
+  image:wallet
+},
+{
+  title:'How to become a better Speaker at Conferences',
+  image:tasks
+},
+{
+  title:'How to Search For a Web Developer Job Abroad',
+  image:developer
+},
+{
+  title:'How Craft The Perfect Web Design and Developer',
+  image:automation
+},
+{
+  title:'The Missing Advice I Needed When Starting My Career',
+  image:intergration
+},
+]
