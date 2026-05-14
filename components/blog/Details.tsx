@@ -20,6 +20,7 @@ import User2 from "../../public/christy.jpg";
 import quote from "../../public/blogquote.svg";
 import reply from "../../public/reply.svg";
 import React from "react";
+import ReplyForm from "./Contact";
 
 export default function Details() {
   const { blogid } = useParams();
@@ -148,6 +149,7 @@ export default function Details() {
         </div>
         </div>
       </div>
+        <ReplyForm />
     </div>
   );
 }
