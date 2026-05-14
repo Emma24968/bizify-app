@@ -468,41 +468,50 @@ export const Testimonials = [
   },
 ];
 
-export const blogpost=[
-{
-  title:'Top 5 Benefits of Auto Finance Coverage',
-  image:budget
-},
-{
-  title:'How to Craft The Perfect Web Design and Developer',
-  image:deployment
-},
-{
-  title:'Top 5 Benefits of Auto Finance Coverage',
-  image:crypto
-},
-{
-  title:'Building Your Own Personal Learning Curriculum',
-  image:data
-},
-{
-  title:'Seven Mistakes to Avoid in Your Technical Interviews',
-  image:wallet
-},
-{
-  title:'How to become a better Speaker at Conferences',
-  image:tasks
-},
-{
-  title:'How to Search For a Web Developer Job Abroad',
-  image:developer
-},
-{
-  title:'How Craft The Perfect Web Design and Developer',
-  image:automation
-},
-{
-  title:'The Missing Advice I Needed When Starting My Career',
-  image:intergration
-},
+export const blogpost = [
+  {
+    id: 'Top-5-Benefits-of-Auto-Finance-Coverage',
+    title: 'Top 5 Benefits of Auto Finance Coverage',
+    image: budget
+  },
+  {
+    id: 'How-to-Craft-The-Perfect-Web-Design-and-Developer',
+    title: 'How to Craft The Perfect Web Design and Developer',
+    image: deployment
+  },
+  {
+    id: 'Top-5-Benefits-of-Auto-Finance-Coverage-2',
+    title: 'Top 5 Benefits of Auto Finance Coverage',
+    image: crypto
+  },
+  {
+    id: 'Building-Your-Own-Personal-Learning-Curriculum',
+    title: 'Building Your Own Personal Learning Curriculum',
+    image: data
+  },
+  {
+    id: 'Seven-Mistakes-to-Avoid-in-Your-Technical-Interviews',
+    title: 'Seven Mistakes to Avoid in Your Technical Interviews',
+    image: wallet
+  },
+  {
+    id: 'How-to-become-a-better-Speaker-at-Conferences',
+    title: 'How to become a better Speaker at Conferences',
+    image: tasks
+  },
+  {
+    id: 'How-to-Search-For-a-Web-Developer-Job-Abroad',
+    title: 'How to Search For a Web Developer Job Abroad',
+    image: developer
+  },
+  {
+    id: 'How-Craft-The-Perfect-Web-Design-and-Developer',
+    title: 'How Craft The Perfect Web Design and Developer',
+    image: automation
+  },
+  {
+    id: 'The-Missing-Advice-I-Needed-When-Starting-My-Career',
+    title: 'The Missing Advice I Needed When Starting My Career',
+    image: intergration
+  },
 ]
