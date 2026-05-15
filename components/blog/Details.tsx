@@ -21,6 +21,7 @@ import quote from "../../public/blogquote.svg";
 import reply from "../../public/reply.svg";
 import React from "react";
 import ReplyForm from "./Contact";
+import CTA from "../CTA";
 
 export default function Details() {
   const { blogid } = useParams();
@@ -150,6 +151,7 @@ export default function Details() {
         </div>
       </div>
         <ReplyForm />
+        <CTA />
     </div>
   );
 }
