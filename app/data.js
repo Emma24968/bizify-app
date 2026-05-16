@@ -515,3 +515,26 @@ export const blogpost = [
     image: intergration
   },
 ]
+
+export const List =[
+{
+  name:'Consulting',
+  number:3
+},
+{
+  name:'Banking',
+  number:1
+},
+{
+  name:'Finance',
+  number:6
+},
+{
+  name:'Development',
+  number:2
+},
+{
+  name:'Business',
+  number:4
+}
+]
