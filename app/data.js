@@ -516,7 +516,7 @@ export const blogpost = [
   },
 ]
 
-export const List =[
+export const posts =[
 {
   name:'Consulting',
   number:3
