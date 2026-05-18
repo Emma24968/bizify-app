@@ -25,6 +25,7 @@ import CTA from "../CTA";
 import PageHeader from "../../app/PageHeader";
 import ServiceList from "./ServiceList";
 import Search from "@/components/blog/Search";
+import Post from "./Posts";
 
 export default function Details() {
   const { blogid } = useParams();
@@ -194,7 +195,7 @@ export default function Details() {
           <div className="flex flex-col gap-15">
             <Search />
             <ServiceList />
-            <blog
+            <Post />
           </div>
       </div>
         <CTA />
