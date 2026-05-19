@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PageHeader from "./PageHeader";
+import Home from "./page";
 
 export const dynamic = "force-dynamic";
 
@@ -21,7 +22,7 @@ export default function NotFound() {
         </p>
 
         <div className="text-center">
-          <Link href={}>
+          <Link href='/'>
   <button className="my-6 cursor-pointer bg-[#84A17D] text-white px-6 py-3 rounded-md">
     Back To Home
   </button>
