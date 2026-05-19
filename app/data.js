@@ -15,6 +15,13 @@ import abstract from "@/public/Abstract.png";
 import experience from "@/public/experience.svg";
 import check from "@/public/check.svg";
 import cancel from "@/public/cancel.svg";
+import risk from "@/public/risk.svg";
+import investment from "@/public/investment.svg";
+import marketing from "@/public/marketing.svg";
+import planning from "@/public/planning.svg";
+import strategy from "@/public/strategy.svg";
+import headPhone from "@/public/headPhone.svg";
+import tax from "@/public/tax.svg";
 import team1 from "@/public/Team1.jpg";
 import team2 from "@/public/Team2.jpg";
 import team3 from "@/public/Team3.jpg";
@@ -29,11 +36,17 @@ import project1 from "@/public/project1.webp";
 import project2 from "@/public/project2.webp";
 import project3 from "@/public/project3.webp";
 import project4 from "@/public/project4.webp";
+import portfolio1 from "@/public/portfolio1.webp";
+import portfolio2 from "@/public/portfolio2.webp";
+import portfolio3 from "@/public/portfolio3.webp";
+import portfolio4 from "@/public/portfolio4.webp";
+import portfolio5 from "@/public/portfolio5.webp";
+import portfolio6 from "@/public/portfolio6.webp";
 import blog1 from "@/public/blog1.jpg";
 import blog2 from "@/public/blog2.jpg";
 import blog3 from "@/public/blog3.jpg";
 
-export const gallerys=[ig1,ig2,ig3,ig4,ig5,ig6]
+export const gallerys = [ig1, ig2, ig3, ig4, ig5, ig6];
 export const clients = [logo1, logo2, logo3, logo4, logo5, logo6];
 export const services = [
   {
@@ -73,10 +86,19 @@ export const checks = [
   { image: check, description: "Happy Customers" },
 ];
 export const About_checks = [
-  { image: check, description: "Created 40+ unique sections with responsiveness." },
-  { image: check, description: "You will able to build a new site with an ease." },
-  { image: check, description: "Booster is made for stay ahead from the compitition." },
-]; 
+  {
+    image: check,
+    description: "Created 40+ unique sections with responsiveness.",
+  },
+  {
+    image: check,
+    description: "You will able to build a new site with an ease.",
+  },
+  {
+    image: check,
+    description: "Booster is made for stay ahead from the compitition.",
+  },
+];
 export const teams = [
   { image: team1, name: "Brooklyn Simmons", position: "Founder" },
   { image: team3, name: "Sophia Rodriguez", position: "Creative Director" },
@@ -84,8 +106,8 @@ export const teams = [
   { image: team4, name: "Alexander Cameron", position: "Lead Developer" },
 ];
 export const members = [
-  { image: team1, name: "Brooklyn Simmons", position: 'Finance Advisor'},
-  { image: team3, name: "Sophia Rodriguez", position: 'Finance Advisor'},
+  { image: team1, name: "Brooklyn Simmons", position: "Finance Advisor" },
+  { image: team3, name: "Sophia Rodriguez", position: "Finance Advisor" },
   { image: team2, name: "Marvin McKinney", position: "Business Engr." },
 ];
 
@@ -108,7 +130,50 @@ export const projects = [
   },
 ];
 
-
+export const serviceCards = [
+  {
+    id:'strategy',
+    image: strategy,
+    title: "Finance Planning",
+    description:
+      "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
+  },
+  {
+    id:'task',
+    image: tax,
+    title: "Tax File Audit",
+    description:
+      "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
+  },
+  {
+    id:'risk',
+    image: risk,
+    title: "Risk Management",
+    description:
+      "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
+  },
+  {
+    id:'investment',
+    image: investment,
+    title: "Investment Idea",
+    description:
+      "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
+  },
+  {
+    id:'planning',
+    image: planning,
+    title: "Business Strategy",
+    description:
+      "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
+  },
+  {
+    id:'marketing',
+    image: marketing,
+    title: "Marketing Strategy",
+    description:
+      "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
+  },
+];
 
 export const plans = [
   {
@@ -159,6 +224,109 @@ export const plans = [
     button: "Get Your Plan",
   },
 ];
- export const blogs=[
-  blog1,blog2,blog3
- ]
+export const blogs = [blog1, blog2, blog3];
+export const pricingPlans = [
+  {
+    name: "Basic Plan",
+    price: "$29",
+    tag: "Recommended",
+    highlighted: false,
+  },
+  {
+    name: "Professional Plan",
+    price: "$49",
+    tag: "Most Popular",
+    highlighted: true,
+  },
+  {
+    name: "Enterprise Plan",
+    price: "$79",
+    tag: "Best Value",
+    highlighted: false,
+  },
+];
+
+export const serviceList = [
+  {
+    id: 'Finance Planning',
+    name: "Finance Planning",
+    highlighted: true,
+  },
+  {
+    id: 'Tax File Audit',
+    name: "Tax File Audit",
+  },
+  {
+    id: 'Risk Management',
+    name: "Risk Management",
+  },
+  {
+    id: 'Investment Idea',
+    name: "Investment Idea",
+  },
+  {
+    id: 'Business Strategy',
+    name: "Business Strategy",
+  },
+  {
+    id: 'Marketing Strategy',
+    name: "Marketing Strategy",
+  },
+];
+
+export const contact = [
+  {
+    image: headPhone,
+    header: `Don't hesitate to get in touch with us.`,
+    description:
+      "A content management system helps you create, manage, and publish content.",
+    button: "Get in Touch",
+  },
+];
+
+export const Servicedetails = [
+  "Creating and editing content",
+  "Workflows, reporting, and content organization",
+  "User & role-based administration and security",
+  "Flexibility, scalability, and performance and analysis",
+  "Multilingual content capabilities",
+];
+
+export const portfolios = [
+  {
+    id: "market-research-analysis",
+    image: portfolio3,
+    title: "Market Research and Analysis",
+    category: "Business Analysis",
+  },
+  {
+    id: "market-research-growth",
+    image: portfolio2,
+    title: "Market Research and Analysis",
+    category: "Business Growth",
+  },
+  {
+    id: "market-research-development",
+    image: portfolio1,
+    title: "Market Research and Analysis",
+    category: "Business Development",
+  },
+  {
+    id: "finance-audit",
+    image: project4,
+    title: "Finance & Audit",
+    category: "Business Analysis",
+  },
+  {
+    id: "strategy-planning",
+    image: project3,
+    title: "Strategy Planning",
+    category: "Business Analysis",
+  },
+  {
+    id: "consulting-services",
+    image: portfolio6,
+    title: "Consulting Services",
+    category: "Business Analysis",
+  },
+];

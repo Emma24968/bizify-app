@@ -21,7 +21,7 @@ import PageHeader from "../PageHeader";
 export default function About() {
   return (
     <div className=" ">
-<PageHeader title="Home" currentPage="About"/>
+<PageHeader title="About" currentPage="About"/>
       <section className="flex py-16">
         <div className="px-16">
           {cards.map((card, index) => {
