@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Services() {
   return (
-    <div className="grid px-16 py-16 grid-cols-3 justify-center">
+    <div className="grid px-16 py-16 grid-cols-3 justify-items-center">
       {serviceCards.map((service, index) => {
         return (
           <div
