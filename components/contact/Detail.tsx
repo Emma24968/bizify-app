@@ -5,8 +5,8 @@ export default function Detail() {
   return (
     <div className="max-w-xl space-y-8">
       <div className="space-y-4">
-        <h3 className="text-4xl font-bold text-[#172426] leading-tight">
-          Make something awesome.
+        <h3 className="text-3xl font-bold text-[#172426] leading-tight">
+          Make something <br /> awesome.
         </h3>
 
         <p className="text-gray-600 leading-7">
