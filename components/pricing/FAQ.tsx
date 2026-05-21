@@ -8,7 +8,7 @@ export default function FAQ() {
   const [open, setOpen] = useState(null);
 
   return (
-    <section className="w-full py-16 flex justify-center px-4">
+    <section className=" py-16 flex justify-center px-4">
       <div className="w-full max-w-2xl">
         <h3 className="text-3xl font-bold mb-3">
           Frequently Asked Questions
