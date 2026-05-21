@@ -1,29 +1,35 @@
-import { faqs } from '@/app/data'
-import { Minus, Plus } from 'lucide-react'
-import React from 'react'
+"use client";
+import { faqs } from "@/app/data";
+import { Minus, Plus } from "lucide-react";
+import React, { useState } from "react";
 
 export default function FAQ() {
+  const [open, isOpen] = useState(null);
   return (
     <div>
-        <div className=""></div>
-        <div className="w-[30%]">
-            <h3>Frequently asked asked question</h3>
-            <p>Morem ipsum dolor sit amet, consectetur adipiscing elita florai psum dolor sit amet,consectetur amet consecteture.</p>
-            <div className="">
-              {faqs.map((faq,index)=>{
-                return(
-                  <div className='group h-20 b'>
-                    <p>{faq.question}</p>
-                  </div>
-                )
-              })}
-              {/* <div className="group relative">
-<div className="flex gap-3"></div>
-              <h3 className='bg-green-600 h-[50px] '>Essential types of business insurance?</h3> <Plus />
-              <p className='bg-gray-500 '>If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.</p><Minus />
-              </div> */}
-            </div>
+      <div className=""></div>
+      <div className="w-[30%]">
+        <h3>Frequently asked asked question</h3>
+        <p>
+          Morem ipsum dolor sit amet, consectetur adipiscing elita florai psum
+          dolor sit amet,consectetur amet consecteture.
+        </p>
+        <div className="">
+          {faqs.map((faq, id) => {
+            return (
+              <div key={id} className="space-y-3  ">
+                <p
+                  className="bg-[#153C3C]"
+                  onClick={() => isOpen(open === id ? null : id)}
+                >
+                  {faq.question}
+                </p>
+                {open === id && <p className="bg-[#F4F5F6]">{faq.answer}</p>}
+              </div>
+            );
+          })}
         </div>
+      </div>
     </div>
-  )
+  );
 }

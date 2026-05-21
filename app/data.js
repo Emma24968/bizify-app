@@ -396,14 +396,17 @@ export const skills=[
   ]
   export const faqs=[
     {
+      id:0,
       question:'How to choose health insurance?',
       answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
     },
     {
+      id:1,
       question:'How does life insurance help my family?',
       answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
     },
     {
+      id:2,
       question:'Essential types of business insurance?',
       answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
     },
