@@ -141,6 +141,7 @@ export const projects = [
 
 export const serviceCards = [
   {
+    id:'strategy',
     image: strategy,
     id: "Finance-Planning",
     title: "Finance Planning",
@@ -149,6 +150,7 @@ export const serviceCards = [
     highlighted: true,
   },
   {
+    id:'task',
     image: tax,
     id: "Tax-File-Audit",
     title: "Tax File Audit",
@@ -156,6 +158,7 @@ export const serviceCards = [
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
+    id:'risk',
     image: risk,
     id: "Risk-Management",
     title: "Risk Management",
@@ -163,6 +166,7 @@ export const serviceCards = [
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
+    id:'investment',
     image: investment,
     id: "Investment-Idea",
     title: "Investment Idea",
@@ -170,6 +174,7 @@ export const serviceCards = [
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
+    id:'planning',
     image: planning,
     id: "Business-Strategy",
     title: "Business Strategy",
@@ -177,6 +182,7 @@ export const serviceCards = [
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
+    id:'marketing',
     image: marketing,
     id: "Marketing-Strategy",
     title: "Marketing Strategy",
@@ -258,28 +264,28 @@ export const pricingPlans = [
 
 export const serviceList = [
   {
-    id: "Finance Planning",
+    id: 'Finance Planning',
     name: "Finance Planning",
     highlighted: true,
   },
   {
-    id: "Tax File Audit",
+    id: 'Tax File Audit',
     name: "Tax File Audit",
   },
   {
-    id: "Risk Management",
+    id: 'Risk Management',
     name: "Risk Management",
   },
   {
-    id: "Investment Idea",
+    id: 'Investment Idea',
     name: "Investment Idea",
   },
   {
-    id: "Business Strategy",
+    id: 'Business Strategy',
     name: "Business Strategy",
   },
   {
-    id: "Marketing Strategy",
+    id: 'Marketing Strategy',
     name: "Marketing Strategy",
   },
 ];
@@ -538,3 +544,42 @@ export const posts =[
   number:4
 }
 ]
+
+export const portfolios = [
+  {
+    id: "market-research-analysis",
+    image: portfolio3,
+    title: "Market Research and Analysis",
+    category: "Business Analysis",
+  },
+  {
+    id: "market-research-growth",
+    image: portfolio2,
+    title: "Market Research and Analysis",
+    category: "Business Growth",
+  },
+  {
+    id: "market-research-development",
+    image: portfolio1,
+    title: "Market Research and Analysis",
+    category: "Business Development",
+  },
+  {
+    id: "finance-audit",
+    image: project4,
+    title: "Finance & Audit",
+    category: "Business Analysis",
+  },
+  {
+    id: "strategy-planning",
+    image: project3,
+    title: "Strategy Planning",
+    category: "Business Analysis",
+  },
+  {
+    id: "consulting-services",
+    image: portfolio6,
+    title: "Consulting Services",
+    category: "Business Analysis",
+  },
+];
