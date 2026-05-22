@@ -42,6 +42,12 @@ import project1 from "@/public/project1.webp";
 import project2 from "@/public/project2.webp";
 import project3 from "@/public/project3.webp";
 import project4 from "@/public/project4.webp";
+import portfolio1 from "@/public/portfolio1.webp";
+import portfolio2 from "@/public/portfolio2.webp";
+import portfolio3 from "@/public/portfolio3.webp";
+import portfolio4 from "@/public/portfolio4.webp";
+import portfolio5 from "@/public/portfolio5.webp";
+import portfolio6 from "@/public/portfolio6.webp";
 import blog1 from "@/public/blog1.jpg";
 import blog2 from "@/public/blog2.jpg";
 import blog3 from "@/public/blog3.jpg";
@@ -132,6 +138,7 @@ export const projects = [
 
 export const serviceCards = [
   {
+    id:'strategy',
     image: strategy,
     id: "Finance-Planning",
     title: "Finance Planning",
@@ -141,6 +148,7 @@ export const serviceCards = [
 
   },
   {
+    id:'task',
     image: tax,
     id: "Tax-File-Audit",
     title: "Tax File Audit",
@@ -148,6 +156,7 @@ export const serviceCards = [
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
+    id:'risk',
     image: risk,
     id: "Risk-Management",
     title: "Risk Management",
@@ -155,6 +164,7 @@ export const serviceCards = [
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
+    id:'investment',
     image: investment,
     id: "Investment-Idea",
     title: "Investment Idea",
@@ -162,6 +172,7 @@ export const serviceCards = [
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
+    id:'planning',
     image: planning,
     id: "Business-Strategy",
     title: "Business Strategy",
@@ -169,6 +180,7 @@ export const serviceCards = [
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
   },
   {
+    id:'marketing',
     image: marketing,
     id: "Marketing-Strategy",
     title: "Marketing Strategy",
@@ -232,7 +244,7 @@ export const pricingPlans = [
     name: "Basic Plan",
     price: "$29",
     tag: "Recommended",
-    highlighted:false
+    highlighted: false,
   },
   {
     name: "Professional Plan",
@@ -244,170 +256,91 @@ export const pricingPlans = [
     name: "Enterprise Plan",
     price: "$79",
     tag: "Best Value",
-    highlighted:false
+    highlighted: false,
   },
 ];
 
 export const serviceList = [
   {
-    id:'Finance Planning',
+    id: 'Finance Planning',
     name: "Finance Planning",
     highlighted: true,
   },
   {
-    id:'Tax File Audit',
+    id: 'Tax File Audit',
     name: "Tax File Audit",
   },
   {
-    id:'Risk Management',
+    id: 'Risk Management',
     name: "Risk Management",
   },
   {
-    id:'Investment Idea',
+    id: 'Investment Idea',
     name: "Investment Idea",
   },
   {
-    id:'Business Strategy',
+    id: 'Business Strategy',
     name: "Business Strategy",
   },
   {
-    id:'Marketing Strategy',
+    id: 'Marketing Strategy',
     name: "Marketing Strategy",
   },
 ];
 
-export const contact=[{
-image:headPhone,
-  header:`Don't hesitate to get in touch with us.`,
-  description:'A content management system helps you create, manage, and publish content.',
-  button:'Get in Touch'
-}
-]
-
-export const Servicedetails=[
-  'Creating and editing content','Workflows, reporting, and content organization','User & role-based administration and security','Flexibility, scalability, and performance and analysis','Multilingual content capabilities'
-]
-export const Teams = [
-  { 
-    id: "sophia-rodriguez", 
-    image: team3, 
-    name: "Sophia Rodriguez", 
-    position: "Creative Director" ,
-    skills: [
-      { name: "React", value: "95%" },
-      { name: "JavaScript", value: "90%" },
-      { name: "UI Design", value: "75%" },
-    ],
-  },
-  { 
-    id: "marvin-mckinney", 
-    image: team2, 
-    name: "Marvin McKinney", 
-    position: "Product Designer" ,
-    skills: [
-      { name: "React", value: "95%" },
-      { name: "JavaScript", value: "90%" },
-      { name: "UI Design", value: "75%" },
-    ],
-  },
-  { 
-    id: "alexander-cameron", 
-    image: team4, 
-    name: "Alexander Cameron", 
-    position: "Lead Developer" ,
-    skills: [
-      { name: "React", value: "95%" },
-      { name: "JavaScript", value: "90%" },
-      { name: "UI Design", value: "75%" },
-    ],
-  },
-  { 
-    id: "leslie-alexander", 
-    image: amy, 
-    name: "Leslie Alexander", 
-    position: "Finance Advisor" ,
-    skills: [
-      { name: "React", value: "95%" },
-      { name: "JavaScript", value: "90%" },
-      { name: "UI Design", value: "75%" },
-    ],
-  },
-  { 
-    id: "megan-oustin", 
-    image: christy, 
-    name: "Megan Oustin", 
-    position: "Human Resources Manager" ,
-    skills: [
-      { name: "React", value: "95%" },
-      { name: "JavaScript", value: "90%" },
-      { name: "UI Design", value: "75%" },
-    ],
-  },
-  { 
-    id: "juan-boone", 
-    image: juan, 
-    name: "Juan Boone", 
-    position: "Capabilities Leader" ,
-    skills: [
-      { name: "React", value: "95%" },
-      { name: "JavaScript", value: "90%" },
-      { name: "UI Design", value: "75%" },
-    ],
-  },
-  { 
-    id: "dora-schwartz", 
-    image: mizan, 
-    name: "Dora Schwartz", 
-    position: "Chief Executive Officer" ,
-    skills: [
-      { name: "React", value: "95%" },
-      { name: "JavaScript", value: "90%" },
-      { name: "UI Design", value: "75%" },
-    ],
-  },
-  { 
-    id: "charlotte-sophia", 
-    image: sofia, 
-    name: "Charlotte Sophia", 
-    position: "CEO Consulting Company" ,
-    skills: [
-      { name: "React", value: "95%" },
-      { name: "JavaScript", value: "90%" },
-      { name: "UI Design", value: "75%" },
-    ],
-  },
-  { 
-    id: "juhani-pallasmaa", 
-    image: tony, 
-    name: "Juhani Pallasmaa", 
-    position: "Senior Consulting Developer" ,
-    skills: [
-      { name: "React", value: "95%" },
-      { name: "JavaScript", value: "90%" },
-      { name: "UI Design", value: "75%" },
-    ],
+export const contact = [
+  {
+    image: headPhone,
+    header: `Don't hesitate to get in touch with us.`,
+    description:
+      "A content management system helps you create, manage, and publish content.",
+    button: "Get in Touch",
   },
 ];
 
-export const skills=[
-    { name: "Productivity", value: "90%" },
-    { name: "Digital Marketing", value: "80%" },
-    { name: "Technology", value: "85%" },
-  ]
-  export const faqs=[
-    {
-      id:0,
-      question:'How to choose health insurance?',
-      answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
-    },
-    {
-      id:1,
-      question:'How does life insurance help my family?',
-      answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
-    },
-    {
-      id:2,
-      question:'Essential types of business insurance?',
-      answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
-    },
-  ]
+export const Servicedetails = [
+  "Creating and editing content",
+  "Workflows, reporting, and content organization",
+  "User & role-based administration and security",
+  "Flexibility, scalability, and performance and analysis",
+  "Multilingual content capabilities",
+];
+
+export const portfolios = [
+  {
+    id: "market-research-analysis",
+    image: portfolio3,
+    title: "Market Research and Analysis",
+    category: "Business Analysis",
+  },
+  {
+    id: "market-research-growth",
+    image: portfolio2,
+    title: "Market Research and Analysis",
+    category: "Business Growth",
+  },
+  {
+    id: "market-research-development",
+    image: portfolio1,
+    title: "Market Research and Analysis",
+    category: "Business Development",
+  },
+  {
+    id: "finance-audit",
+    image: project4,
+    title: "Finance & Audit",
+    category: "Business Analysis",
+  },
+  {
+    id: "strategy-planning",
+    image: project3,
+    title: "Strategy Planning",
+    category: "Business Analysis",
+  },
+  {
+    id: "consulting-services",
+    image: portfolio6,
+    title: "Consulting Services",
+    category: "Business Analysis",
+  },
+];
