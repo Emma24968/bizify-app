@@ -244,11 +244,7 @@ export const pricingPlans = [
     name: "Basic Plan",
     price: "$29",
     tag: "Recommended",
-<<<<<<< HEAD
-    highlighted: false,
-=======
     highlighted:false
->>>>>>> pricing
   },
   {
     name: "Professional Plan",
@@ -260,44 +256,17 @@ export const pricingPlans = [
     name: "Enterprise Plan",
     price: "$79",
     tag: "Best Value",
-<<<<<<< HEAD
-    highlighted: false,
-=======
     highlighted:false
->>>>>>> pricing
   },
 ];
 
 export const serviceList = [
   {
-<<<<<<< HEAD
-    id: 'Finance Planning',
-=======
     id:'Finance Planning',
->>>>>>> pricing
     name: "Finance Planning",
     highlighted: true,
   },
   {
-<<<<<<< HEAD
-    id: 'Tax File Audit',
-    name: "Tax File Audit",
-  },
-  {
-    id: 'Risk Management',
-    name: "Risk Management",
-  },
-  {
-    id: 'Investment Idea',
-    name: "Investment Idea",
-  },
-  {
-    id: 'Business Strategy',
-    name: "Business Strategy",
-  },
-  {
-    id: 'Marketing Strategy',
-=======
     id:'Tax File Audit',
     name: "Tax File Audit",
   },
@@ -315,7 +284,6 @@ export const serviceList = [
   },
   {
     id:'Marketing Strategy',
->>>>>>> pricing
     name: "Marketing Strategy",
   },
 ];
@@ -330,54 +298,6 @@ export const contact = [
   },
 ];
 
-<<<<<<< HEAD
-export const Servicedetails = [
-  "Creating and editing content",
-  "Workflows, reporting, and content organization",
-  "User & role-based administration and security",
-  "Flexibility, scalability, and performance and analysis",
-  "Multilingual content capabilities",
-];
-
-export const portfolios = [
-  {
-    id: "market-research-analysis",
-    image: portfolio3,
-    title: "Market Research and Analysis",
-    category: "Business Analysis",
-  },
-  {
-    id: "market-research-growth",
-    image: portfolio2,
-    title: "Market Research and Analysis",
-    category: "Business Growth",
-  },
-  {
-    id: "market-research-development",
-    image: portfolio1,
-    title: "Market Research and Analysis",
-    category: "Business Development",
-  },
-  {
-    id: "finance-audit",
-    image: project4,
-    title: "Finance & Audit",
-    category: "Business Analysis",
-  },
-  {
-    id: "strategy-planning",
-    image: project3,
-    title: "Strategy Planning",
-    category: "Business Analysis",
-  },
-  {
-    id: "consulting-services",
-    image: portfolio6,
-    title: "Consulting Services",
-    category: "Business Analysis",
-  },
-];
-=======
 export const Servicedetails=[
   'Creating and editing content','Workflows, reporting, and content organization','User & role-based administration and security','Flexibility, scalability, and performance and analysis','Multilingual content capabilities'
 ]
@@ -505,4 +425,3 @@ export const skills=[
       answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
     },
   ]
->>>>>>> pricing

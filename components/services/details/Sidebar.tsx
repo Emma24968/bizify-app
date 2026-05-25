@@ -3,18 +3,17 @@ import React from "react";
 import { serviceList,serviceCards } from "@/app/data";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-<<<<<<< HEAD
-import Link from "next/link";
-=======
 import { useParams } from "next/navigation";
->>>>>>> pricing
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
+import { useParams } from "next/navigation";
 
 export default function Sidebar() {
   const param = useParams();
   const activeStatus=param.serviceid;
   return (
     <div className="flex justify-center items-center ">
-<<<<<<< HEAD
       <div className="w-[70%] justify-between rounded-2xl bg-[#F4F4F4] h-[30rem] py-4 px-4 grid gap-3">
         <h3 className="text-[25px]">Service List</h3>
 
@@ -34,7 +33,6 @@ export default function Sidebar() {
                     className={`${
                       services.highlighted ? "text-white" : "text-black"
                     }`}
-=======
       <div className="w-[70%] justify-between rounded-2xl  bg-[#F4F4F4] h-[30rem] py-4 px-4 grid gap-3">
         <h3 className="text-[25px]">Service List</h3>
         {serviceCards.map((services, index) => {
@@ -52,7 +50,6 @@ const isActive=activeStatus?.toString().toLowerCase()===services.id.toLowerCase(
                   {services.title}
                   <ArrowUpRight
                     className={`${isActive ? "text-white" : "text-black"}`}
->>>>>>> pricing
                   />
                 </button>
               </Link>
