@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Services() {
   return (
-    <div className="grid px-16 py-16 grid-cols-3 justify-center">
+    <div className="grid px-16 py-16 grid-cols-3 justify-items-center">
       {serviceCards.map((service, index) => {
         return (
           <div
@@ -20,7 +20,7 @@ export default function Services() {
               width={70}
               className=" hover:text-white p-2 rounded-[3px] bg-[#84a17d]"
             />
-            <h3 className="font-bold">{service.title}</h3>
+            <h3>{service.title}</h3>
             <p>{service.description}</p>
             <Link href={`/services/${service.id.toLowerCase()}`}>
               <div className="flex items-centergroup ">
