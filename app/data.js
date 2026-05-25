@@ -26,6 +26,12 @@ import team1 from "@/public/Team1.jpg";
 import team2 from "@/public/Team2.jpg";
 import team3 from "@/public/Team3.jpg";
 import team4 from "@/public/Team4.jpg";
+import christy from "@/public/christy.jpg";
+import juan from "@/public/juan.jpg";
+import mizan from "@/public/mizan.jpg";
+import sofia from "@/public/sofia.jpg";
+import tony from "@/public/tony.jpg";
+import amy from "@/public/amy.jpg";
 import ig1 from "@/public/ig1.jpg";
 import ig2 from "@/public/ig2.jpg";
 import ig4 from "@/public/ig4.jpg";
@@ -134,13 +140,17 @@ export const serviceCards = [
   {
     id:'strategy',
     image: strategy,
+    id: "Finance-Planning",
     title: "Finance Planning",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
+          highlighted: true,
+
   },
   {
     id:'task',
     image: tax,
+    id: "Tax-File-Audit",
     title: "Tax File Audit",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
@@ -148,6 +158,7 @@ export const serviceCards = [
   {
     id:'risk',
     image: risk,
+    id: "Risk-Management",
     title: "Risk Management",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
@@ -155,6 +166,7 @@ export const serviceCards = [
   {
     id:'investment',
     image: investment,
+    id: "Investment-Idea",
     title: "Investment Idea",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
@@ -162,6 +174,7 @@ export const serviceCards = [
   {
     id:'planning',
     image: planning,
+    id: "Business-Strategy",
     title: "Business Strategy",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
@@ -169,6 +182,7 @@ export const serviceCards = [
   {
     id:'marketing',
     image: marketing,
+    id: "Marketing-Strategy",
     title: "Marketing Strategy",
     description:
       "It sounds like you referring financial planning! Financial planning involves goals, analyzing your current financial situation.",
@@ -230,7 +244,11 @@ export const pricingPlans = [
     name: "Basic Plan",
     price: "$29",
     tag: "Recommended",
+<<<<<<< HEAD
     highlighted: false,
+=======
+    highlighted:false
+>>>>>>> pricing
   },
   {
     name: "Professional Plan",
@@ -242,17 +260,26 @@ export const pricingPlans = [
     name: "Enterprise Plan",
     price: "$79",
     tag: "Best Value",
+<<<<<<< HEAD
     highlighted: false,
+=======
+    highlighted:false
+>>>>>>> pricing
   },
 ];
 
 export const serviceList = [
   {
+<<<<<<< HEAD
     id: 'Finance Planning',
+=======
+    id:'Finance Planning',
+>>>>>>> pricing
     name: "Finance Planning",
     highlighted: true,
   },
   {
+<<<<<<< HEAD
     id: 'Tax File Audit',
     name: "Tax File Audit",
   },
@@ -270,6 +297,25 @@ export const serviceList = [
   },
   {
     id: 'Marketing Strategy',
+=======
+    id:'Tax File Audit',
+    name: "Tax File Audit",
+  },
+  {
+    id:'Risk Management',
+    name: "Risk Management",
+  },
+  {
+    id:'Investment Idea',
+    name: "Investment Idea",
+  },
+  {
+    id:'Business Strategy',
+    name: "Business Strategy",
+  },
+  {
+    id:'Marketing Strategy',
+>>>>>>> pricing
     name: "Marketing Strategy",
   },
 ];
@@ -284,6 +330,7 @@ export const contact = [
   },
 ];
 
+<<<<<<< HEAD
 export const Servicedetails = [
   "Creating and editing content",
   "Workflows, reporting, and content organization",
@@ -330,3 +377,132 @@ export const portfolios = [
     category: "Business Analysis",
   },
 ];
+=======
+export const Servicedetails=[
+  'Creating and editing content','Workflows, reporting, and content organization','User & role-based administration and security','Flexibility, scalability, and performance and analysis','Multilingual content capabilities'
+]
+export const Teams = [
+  { 
+    id: "sophia-rodriguez", 
+    image: team3, 
+    name: "Sophia Rodriguez", 
+    position: "Creative Director" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
+  },
+  { 
+    id: "marvin-mckinney", 
+    image: team2, 
+    name: "Marvin McKinney", 
+    position: "Product Designer" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
+  },
+  { 
+    id: "alexander-cameron", 
+    image: team4, 
+    name: "Alexander Cameron", 
+    position: "Lead Developer" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
+  },
+  { 
+    id: "leslie-alexander", 
+    image: amy, 
+    name: "Leslie Alexander", 
+    position: "Finance Advisor" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
+  },
+  { 
+    id: "megan-oustin", 
+    image: christy, 
+    name: "Megan Oustin", 
+    position: "Human Resources Manager" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
+  },
+  { 
+    id: "juan-boone", 
+    image: juan, 
+    name: "Juan Boone", 
+    position: "Capabilities Leader" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
+  },
+  { 
+    id: "dora-schwartz", 
+    image: mizan, 
+    name: "Dora Schwartz", 
+    position: "Chief Executive Officer" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
+  },
+  { 
+    id: "charlotte-sophia", 
+    image: sofia, 
+    name: "Charlotte Sophia", 
+    position: "CEO Consulting Company" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
+  },
+  { 
+    id: "juhani-pallasmaa", 
+    image: tony, 
+    name: "Juhani Pallasmaa", 
+    position: "Senior Consulting Developer" ,
+    skills: [
+      { name: "React", value: "95%" },
+      { name: "JavaScript", value: "90%" },
+      { name: "UI Design", value: "75%" },
+    ],
+  },
+];
+
+export const skills=[
+    { name: "Productivity", value: "90%" },
+    { name: "Digital Marketing", value: "80%" },
+    { name: "Technology", value: "85%" },
+  ]
+  export const faqs=[
+    {
+      id:0,
+      question:'How to choose health insurance?',
+      answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
+    },
+    {
+      id:1,
+      question:'How does life insurance help my family?',
+      answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
+    },
+    {
+      id:2,
+      question:'Essential types of business insurance?',
+      answer:`If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
+    },
+  ]
+>>>>>>> pricing

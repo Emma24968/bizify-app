@@ -1,7 +1,12 @@
 import React from "react";
 import Image from "next/image";
+<<<<<<< HEAD
 import Link from "next/link"; // 1. Import Link
+=======
+import Link from "next/link";
+>>>>>>> pricing
 import { serviceCards } from "@/app/data";
+import { serviceList } from "@/app/data";
 import { ArrowRight } from "lucide-react";
 
 export default function Services() {
@@ -21,6 +26,7 @@ export default function Services() {
             />
             <h3 className="font-bold">{service.title}</h3>
             <p>{service.description}</p>
+<<<<<<< HEAD
             
             {/* 2. Wrap the button/arrow in a Link tag */}
             <Link 
@@ -29,6 +35,18 @@ export default function Services() {
             >
               <button className="text-[#84a17d] font-medium cursor-pointer">Learn more</button>
               <ArrowRight className="text-[#84a17d] ml-1 transition-transform group-hover:translate-x-1" />
+=======
+            <Link href={`/services/${service.id.toLowerCase()}`}>
+              <div className="flex items-centergroup ">
+                <button className="text-[#84a17d] cursor-pointer  text-[12px] gap-2 hover:text-black">
+                  Learn more
+                </button>
+                <ArrowRight
+                  size={20}
+                  className="text-[#84a17d] cursor-pointer  hover:text-black"
+                />
+              </div>
+>>>>>>> pricing
             </Link>
           </div>
         );
