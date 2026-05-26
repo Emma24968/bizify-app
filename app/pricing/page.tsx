@@ -15,6 +15,8 @@ export default function Pricing() {
   currentPage="Pricing Plan"
 />
 <Plan />
+<FAQ />
+<Newsletter />
 <Newsletter /><div className="flex gap-10 justify-center py-16 ">
   <Image src={image} width={400} className='rounded-2xl ' alt='faq image' />
 <FAQ />

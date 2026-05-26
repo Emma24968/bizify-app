@@ -32,6 +32,14 @@ export default function Services() {
                   className="text-[#84a17d] cursor-pointer  hover:text-black"
                 />
               </div>
+            
+            {/* 2. Wrap the button/arrow in a Link tag */}
+            <Link 
+              href={`/services/${service.id}`} 
+              className="flex items-center group cursor-pointer"
+            >
+              <button className="text-[#84a17d] font-medium cursor-pointer">Learn more</button>
+              <ArrowRight className="text-[#84a17d] ml-1 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
         );
