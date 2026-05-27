@@ -1,9 +1,9 @@
-import React from 'react'
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 import icon from "@/public/Icon.png";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from "lucide-react";
 import audit from "@/public/audit.jpg";
-import { services } from '@/app/data';
+import { services } from "@/app/data";
 export default function Service() {
   return (
     <div>      <section className="py-16 px-20 ">
@@ -33,48 +33,27 @@ export default function Service() {
                 </div>
               </div>
               <div
+                key={index}
                 className="
               flex flex-col gap-4 hover:shadow-2xl transition mt-10 bg-[#f4f5f6] p-6 rounded-2xl"
               >
                 <Image
-                  src={audit}
-                  alt="audit"
+                  src={service.image}
+                  alt="image"
                   width={250}
-                  className="rounded-2xl"
+                  className="rounded-xl"
                 />
-                <h3>Audit & Assurance</h3>
+                <h3>{service.title}</h3>
                 <hr className="text-[#bdb2b2c2]" />
                 <div className="flex">
-                  <button className="text-[#84a17d]">Learn more</button>
+                  <button className="text-[#84a17d] cursor-pointer">Learn more</button>
                   <ArrowRight className="text-[#84a17d]" />
                 </div>
               </div>
-            </div>
-            <div className=" grid grid-cols-4 gap-4">
-              {services.map((service, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="
-              flex flex-col gap-4 hover:shadow-2xl transition mt-10 bg-[#f4f5f6] p-6 rounded-2xl"
-                  >
-                    <Image
-                      src={service.image}
-                      alt="image"
-                      width={250}
-                      className="rounded-xl"
-                    />
-                    <h3>{service.title}</h3>
-                    <hr className="text-[#bdb2b2c2]" />
-                    <div className="flex">
-                      <button className="text-[#84a17d]">Learn more</button>
-                      <ArrowRight className="text-[#84a17d]" />
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </section>
+            );
+          })}
+        </div>
+      </section>
     </div>
-  )
+  );
 }
