@@ -406,7 +406,7 @@ export const Teams = [
     ],
   },
 ];
-export const Teams = [
+export const TeamsMembers = [
   {
     id: "sophia-rodriguez",
     image: team3,
@@ -508,12 +508,12 @@ export const Teams = [
   },
 ];
 
-export const skills = [
+export const skill = [
   { name: "Productivity", value: "90%" },
   { name: "Digital Marketing", value: "80%" },
   { name: "Technology", value: "85%" },
 ];
-export const faqs = [
+export const faq = [
   {
     question: "How to choose health insurance?",
     answer: `If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
