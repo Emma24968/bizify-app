@@ -8,8 +8,7 @@ type PageHeaderProps = {
 
 export default function PageHeader({ title, currentPage }: PageHeaderProps) {
   return (
-    <section className="bg-[#153C3C] w-full py-[150px] h-[500px] text-center">
-      <h1 className="px-16 text-[70px] text-white font-bold">
+<section className="bg-[#153C3C] w-full py-20 flex flex-col justify-center items-center text-center">      <h1 className="px-16 text-[70px] text-white font-bold">
         {title}
       </h1>
 

@@ -2,8 +2,13 @@ import React from "react";
 import PricingCard from "./PricingCard";
 import { pricingPlans } from "@/app/data";
 
-export default function Pricing() {
+export default function  Pricing() {
   return (
+    <div className="bg-white text-center">
+      <h3 className="text-[28px] pt-2">
+    <div className="bg-white">
+      <h3 className="text-4xl font-semibold text-center pt-4">
+
     <div className="bg-white text-center">
       <h3 className="text-[28px] pt-2">
         Your best pricing <br /> offer awaits

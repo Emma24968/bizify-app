@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Unbounded, JetBrains_Mono } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { gallerys } from "@/app/data";
@@ -20,6 +21,9 @@ import Link from "next/link";
 const jetbrainsMono = JetBrains_Mono({subsets:['latin'],variable:'--font-mono'});
 
 const inter = Unbounded({
+  subsets: ["latin"],
+});
+const manrope = Manrope({
   subsets: ["latin"],
 });
 
@@ -74,7 +78,7 @@ export default function RootLayout({
     <Image src={menu} alt="menu icon" width={24} className="cursor-pointer" />
   </div>
 
-</header>     <ThemeProvider attribute='class' enableSystem defaultTheme="system">{children}</ThemeProvider>   
+</header>     <ThemeProvider attribute='class' enableSystem defaultTheme="light">{children}</ThemeProvider>   
 
 <footer className="bg-[#F4F5F6]  px-16 py-14 grid grid-cols-4 gap-12">
 
