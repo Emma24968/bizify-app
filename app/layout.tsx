@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Unbounded, JetBrains_Mono } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { gallerys } from "@/app/data";
@@ -15,10 +16,14 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import ThemeToggle from "./theme-toggle";
+import Link from "next/link";
 
 const jetbrainsMono = JetBrains_Mono({subsets:['latin'],variable:'--font-mono'});
 
 const inter = Unbounded({
+  subsets: ["latin"],
+});
+const manrope = Manrope({
   subsets: ["latin"],
 });
 
@@ -33,35 +38,36 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={cn("font-mono", jetbrainsMono.variable)}>
+    <html lang="en"   suppressHydrationWarning
+ className={cn("font-mono", jetbrainsMono.variable)}>
       <body className={`${inter.className} antialiased`} >
-<header className="bg-[#FBFBFB] flex items-center justify-between px-10 py-4">
+<header className="bg-[#FBFBFB] dark:text-[#282626] flex items-center justify-between px-10 py-4">
 
   <Image src={logo} alt="Bizify Logo" width={150} height={50} />
 
   <nav>
     <ul className="flex items-center gap-6">
       <li className="flex items-center gap-1 cursor-pointer">
-        <a href="#">Home</a>
+        <Link href="/">Home</Link>
         <ChevronDown size={16} />
       </li>
 
       <li>
-        <a href="#">About us</a>
+        <Link href="/about">About us</Link>
       </li>
 
       <li className="flex items-center gap-1 cursor-pointer">
-        <a href="#">Pages</a>
+        <Link href="/services">Services</Link>
         <ChevronDown size={16} />
       </li>
 
       <li className="flex items-center gap-1 cursor-pointer">
-        <a href="#">Blog</a>
+        <Link href="#">Blog</Link>
         <ChevronDown size={16} />
       </li>
 
       <li>
-        <a href="#">Contact</a>
+        <Link href="#">Contact</Link>
       </li>
     </ul>
   </nav>
@@ -72,9 +78,9 @@ export default function RootLayout({
     <Image src={menu} alt="menu icon" width={24} className="cursor-pointer" />
   </div>
 
-</header>     <ThemeProvider attribute='class' enableSystem defaultTheme="system">{children}</ThemeProvider>   
+</header>     <ThemeProvider attribute='class' enableSystem defaultTheme="light">{children}</ThemeProvider>   
 
-<footer className="bg-[#F4F5F6] px-16 py-14 grid grid-cols-4 gap-12">
+<footer className="bg-[#F4F5F6]  px-16 py-14 grid grid-cols-4 gap-12">
 
   <div className="flex flex-col gap-6">
     <Image src={logo} alt="logo" />
@@ -85,34 +91,34 @@ export default function RootLayout({
     </p>
 
     <div className="flex gap-4">
-      <div className="bg-white p-2 rounded hover:bg-[#84A17D] cursor-pointer">
+      <div className="bg-white p-2 rounded hover:bg-[#84A17D] dark:hover:bg-black dark:hover:text-white dark:bg-[#84A17D] cursor-pointer">
         <Facebook />
       </div>
 
-      <div className="bg-white p-2 rounded hover:bg-[#84A17D] cursor-pointer">
+      <div className="bg-white p-2 rounded hover:bg-[#84A17D] dark:hover:bg-black dark:hover:text-white dark:bg-[#84A17D] cursor-pointer">
         <Twitter />
       </div>
 
-      <div className="bg-white p-2 rounded hover:bg-[#84A17D] cursor-pointer">
+      <div className="bg-white p-2 rounded hover:bg-[#84A17D] dark:hover:bg-black dark:hover:text-white dark:bg-[#84A17D] cursor-pointer">
         <Linkedin />
       </div>
     </div>
   </div>
 
   <div>
-    <h3 className="font-semibold mb-4">Quick Links</h3>
+    <h3 className="font-semibold mb-4 dark:text-[#172426]">Quick Links</h3>
 
     <ul className="flex flex-col gap-3 text-gray-600">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About us</a></li>
-      <li><a href="#">Pages</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="/">Home</a></li>
+      <li><Link href="/about">About us</Link></li>
+      <li><Link href="/services">Services</Link></li>
+      <li><Link href="#">Blog</Link></li>
+      <li><Link href="#">Contact</Link></li>
     </ul>
   </div>
 
   <div>
-    <h3 className="font-semibold mb-4">Useful Links</h3>
+    <h3 className="font-semibold mb-4 dark:text-[#172426]">Useful Links</h3>
 
     <ul className="flex flex-col gap-3 text-gray-600">
       <li><a href="#">Company</a></li>

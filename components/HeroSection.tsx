@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <div>      <section className=" grid grid-cols-2 text-white w-full  ">
         <div className=" bg-[#153C3C] flex flex-col justify-center px-16 py-15">
-          <h1 className="text-5xl font-bold leading-tight">
+          <h1 className="text-5xl font-bold leading-tight font-manrope">
             Get Digital <br />
             Products For <br />
             Business
@@ -32,7 +32,7 @@ export default function HeroSection() {
         </div>
         <div className="">
           {" "}
-          <Image src={hero_image} alt="hero-image" className="object-cover" />
+          <Image src={hero_image} alt="hero-image" width={1000} className="object-contain" />
         </div>
       </section>
 </div>

@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import quote from "@/public/Icon.svg";
 
+
 export default function Testimonial() {
   return (
     <div>
