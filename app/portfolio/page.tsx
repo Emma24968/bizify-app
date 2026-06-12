@@ -57,7 +57,6 @@ export default function page() {
         {portfolios.map((Portfolio, index) => {
           return (
                     <Link href={`/portfolio/${Portfolio.id}`}>
-
             <div key={index}>
               <div className="relative group rounded-xl overflow-hidden">
                 <Image
