@@ -22,7 +22,7 @@ export default function Details() {
 
   return (
     <div className="w-[90%] mb-30">
-     <Image src={image} className="rounded-[10px]" alt="service-image" />
+      <Image src={image} className="rounded-[10px]" alt="service-image" />
       <h3 className="text-[40px] my-3">{service.title}</h3>
       <p className="text-[18px] mb-3">
         Lorem ipsum is simply free text used by copytyping refreshing. Neque
@@ -39,7 +39,7 @@ export default function Details() {
         into electronic typesetting, unchange Lorem ipsum dolor sit amet consec
         tetur adipis icing elit.
       </p>
-      <h3 className="text-[30px] my-3">{service.title} Center</h3>
+      <h3 className="text-[25px] my-3">{service.title} Center</h3>
       <p className="text-[18px] mb-3">
         With over a decade of experience, we’ve established ourselves as one of
         pioneering agencies in the region. Our small, flexible, agile and
@@ -69,35 +69,19 @@ export default function Details() {
         into electronic typesetting essentiall dolor unchange Lorem ipsum dolor
         sit amet consec tetur adipis icing elit.
       </p>
-      <h3 className="text-[30px] my-3">{service.title} Details</h3>
-      <p className="text-[18px] mb-3">
-        Cast obscure badger jeep quail congenialy when changed as cat jeepers
-        affectionate thus facilisi goodness this far like ipsum dolor sit amet,
-        consectetur adipisicing elits sed eiusmod tem incididunt et laboret
-        dolore magna aliqua enim ad minim. Eveniet in vulputate esse molestie
-        consequat, illum dolore eu feugiat nulla facilisis at seds eros sed.
-      </p>
-      {Servicedetails.map((details, index) => {
-        return (
-      <p  className="text-[18px] mb-3">When an unknown printer took a galley of type and scrambled it to make a type book. It has leap survive not only five centurie, but also the leap into electronic typesetting essentiall dolor unchange Lorem ipsum dolor sit amet consec tetur adipis icing elit.</p>
-      <h3  className="text-[30px] my-3">Services All Details</h3>
-      <p  className="text-[18px] mb-3">Cast obscure badger jeep quail congenialy when changed as cat jeepers affectionate thus facilisi goodness this far like ipsum dolor sit amet, consectetur adipisicing elits sed eiusmod tem incididunt et laboret dolore magna aliqua enim ad minim. Eveniet in vulputate esse molestie consequat, illum dolore eu feugiat nulla facilisis at seds eros sed.</p>
-      {Servicedetails.map((details,index)=>{
-        return(
-      <p className="text-[18px] mb-3">
-        When an unknown printer took a galley of type and scrambled it to make a
-        type book. It has leap survive not only five centurie, but also the leap
-        into electronic typesetting essentiall dolor unchange Lorem ipsum dolor
-        sit amet consec tetur adipis icing elit.
-      </p>
-      <h3 className="text-[30px] my-3">{service.title} Details</h3>
-      <p className="text-[18px] mb-3">
-        Cast obscure badger jeep quail congenialy when changed as cat jeepers
-        affectionate thus facilisi goodness this far like ipsum dolor sit amet,
-        consectetur adipisicing elits sed eiusmod tem incididunt et laboret
-        dolore magna aliqua enim ad minim. Eveniet in vulputate esse molestie
-        consequat, illum dolore eu feugiat nulla facilisis at seds eros sed.
-      </p>
+      <h3 className="text-[25px] my-3">{service.title} Details</h3>
+      
+      
+          <div >
+            <p className="text-[18px] mb-3">
+              When an unknown printer took a galley of type and scrambled it to
+              make a type book. It has leap survive not only five centurie, but
+              also the leap into electronic typesetting essentiall dolor
+              unchange Lorem ipsum dolor sit amet consec tetur adipis icing
+              elit.
+            </p>
+          </div>
+       
       {Servicedetails.map((details, index) => {
         return (
           <div key={index} className="flex pl-4 gap-3 items-center">
