@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import { cards,card2,checks } from '@/app/data';
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -63,9 +64,11 @@ export default function About() {
               );
             })}
           </div>
-          <button className="bg-[#84a17d] w-[10rem] rounded-lg py-3 px-2 text-white">
-            More About Us{" "}
+          <Link href='/about'>
+          <button className="bg-[#84a17d] cursor-pointer w-[10rem] rounded-lg py-3 px-2 text-white">
+            More About Us
           </button>
+          </Link>
         </div>
       </section>
 </div>
