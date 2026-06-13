@@ -106,12 +106,12 @@ export default function RootLayout({
               </li>
 
               <li className="flex items-center gap-1 cursor-pointer">
-                <Link href="#">Blog</Link>
+                <Link href="/blog">Blog</Link>
                 <ChevronDown size={16} />
               </li>
 
               <li>
-                <Link href="#">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </nav>
@@ -166,10 +166,10 @@ export default function RootLayout({
                 <Link href="/services">Services</Link>
               </li>
               <li>
-                <Link href="#">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </li>
               <li>
-                <Link href="#">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -181,13 +181,13 @@ export default function RootLayout({
 
             <ul className="flex flex-col gap-3 text-gray-600">
               <li>
-                <a href="#">Company</a>
+                <a href="/">Company</a>
               </li>
               <li>
                 <a href="#">Career</a>
               </li>
               <li>
-                <a href="#">Our Blog</a>
+                <a href="/blog">Our Blog</a>
               </li>
               <li>
                 <a href="#">Press Media</a>

@@ -1,11 +1,14 @@
-import React from 'react'
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 import group_profile from "@/public/group_profile.png";
 import hero_image from "@/public/hero-image.jpg";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <div>      <section className=" grid grid-cols-2 text-white w-full  ">
+    <div>
+      {" "}
+      <section className=" grid grid-cols-2 text-white w-full  ">
         <div className=" bg-[#153C3C] flex flex-col justify-center px-16 py-15">
           <h1 className="text-5xl font-bold leading-tight font-manrope">
             Get Digital <br />
@@ -18,12 +21,16 @@ export default function HeroSection() {
             template. They distill complex data into visuals.
           </p>
           <div className="flex gap-6">
-            <button className="bg-[#84a17d] rounded-lg py-3 px-6">
-              Our Services
-            </button>
-            <button className="bg-[#fff] text-black rounded-lg py-3 px-6">
-              Contact Us
-            </button>
+            <Link href="/services">
+              <button className=" cursor-pointer bg-[#84a17d] rounded-lg py-3 px-6">
+                Our Services
+              </button>
+            </Link>
+            <Link href="/contact">
+              <button className=" cursor-pointer bg-[#fff] text-black rounded-lg py-3 px-6">
+                Contact Us
+              </button>
+            </Link>
           </div>
           <div className="flex my-4 gap-3 items-center">
             <Image src={group_profile} alt="group profile" />
@@ -32,9 +39,14 @@ export default function HeroSection() {
         </div>
         <div className="">
           {" "}
-          <Image src={hero_image} alt="hero-image" width={1000} className="object-contain" />
+          <Image
+            src={hero_image}
+            alt="hero-image"
+            width={1000}
+            className="object-contain"
+          />
         </div>
       </section>
-</div>
-  )
+    </div>
+  );
 }
