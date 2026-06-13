@@ -54,6 +54,10 @@ import crypto from "@/public/crypto.webp";
 import blog1 from "@/public/blog1.jpg";
 import blog2 from "@/public/blog2.jpg";
 import blog3 from "@/public/blog3.jpg";
+import portfolio3 from "@/public/portfolio3.webp";
+import portfolio6 from "@/public/portfolio6.webp";
+import portfolio1 from "@/public/portfolio1.webp";
+import portfolio2 from "@/public/portfolio2.webp";
 import { title } from "process";
 
 export const gallerys = [ig1, ig2, ig3, ig4, ig5, ig6];
