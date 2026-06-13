@@ -1,8 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export default function CTA() {
   return (
-    <div>      <section className="bg-[#84a17d] text-white text-center py-20 flex flex-col items-center justify-center gap-6">
+    <div>
+      {" "}
+      <section className="bg-[#84a17d] text-white text-center py-20 flex flex-col items-center justify-center gap-6">
         <h3 className="text-4xl font-bold">Let’s work together</h3>
 
         <p>
@@ -15,6 +17,6 @@ export default function CTA() {
           Let's Start a Project
         </button>
       </section>{" "}
-</div>
-  )
+    </div>
+  );
 }
