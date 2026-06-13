@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link"; // 1. Import Link
+import Link from "next/link";
 import { serviceCards } from "@/app/data";
 import { ArrowRight } from "lucide-react";
 
 export default function Services() {
   return (
-    <div className="grid px-16 py-16 grid-cols-3 justify-center">
+    <div className="grid px-16 py-16 grid-cols-3 justify-items-center">
       {serviceCards.map((service, index) => {
         return (
           <div
@@ -17,18 +17,25 @@ export default function Services() {
               src={service.image}
               alt={service.title}
               width={70}
-              className=" hover:text-white p-2 rounded-[3px] bg-[#84a17d]"
+              className="p-2 rounded-[3px] bg-[#84a17d]"
             />
-            <h3 className="font-bold">{service.title}</h3>
+
+            <h3>{service.title}</h3>
+
             <p>{service.description}</p>
-            
-            {/* 2. Wrap the button/arrow in a Link tag */}
-            <Link 
-              href={`/services/${service.id}`} 
+
+            <Link
+              href={`/services/${service.id.toLowerCase()}`}
               className="flex items-center group cursor-pointer"
             >
-              <button className="text-[#84a17d] font-medium cursor-pointer">Learn more</button>
-              <ArrowRight className="text-[#84a17d] ml-1 transition-transform group-hover:translate-x-1" />
+              <button className="text-[#84a17d] text-[12px] font-medium">
+                Learn more
+              </button>
+
+              <ArrowRight
+                size={20}
+                className="text-[#84a17d] ml-1 transition-transform group-hover:translate-x-1"
+              />
             </Link>
           </div>
         );
