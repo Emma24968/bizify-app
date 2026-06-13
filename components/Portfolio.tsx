@@ -13,8 +13,8 @@ export default function Portfolio() {
             Our latest project <br /> triumphs
           </h3>
 
-          <Link href={''}>
-            <button className="bg-[#84a17d]  rounded-lg py-3 px-2  transition">
+          <Link href={'/portfolio'}>
+            <button className="bg-[#84a17d] cursor-pointer rounded-lg py-3 px-2  transition">
               See All Projects
             </button>
           </Link>
@@ -45,7 +45,7 @@ export default function Portfolio() {
             );
           })}
         </div>
-      </section>{" "}
+      </section>
     </div>
   );
 }
