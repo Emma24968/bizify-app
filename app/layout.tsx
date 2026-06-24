@@ -44,11 +44,10 @@ export default function RootLayout({
         <header className="bg-[#FBFBFB] dark:text-[#282626] flex items-center justify-between px-10 py-4">
           <Image src={logo} alt="Bizify Logo" width={150} height={50} />
 
-          <nav>
+          {/* <nav>
             <ul className="flex items-center gap-6">
               <li className="flex items-center gap-1 cursor-pointer">
                 <Link href="/">Home</Link>
-                <ChevronDown size={16} />
               </li>
 
               <li>
@@ -114,7 +113,7 @@ export default function RootLayout({
                 <Link href="/contact">Contact</Link>
               </li>
             </ul>
-          </nav>
+          </nav> */}
 
           <div className="flex items-center gap-4">
             <ThemeToggle />

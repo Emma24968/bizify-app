@@ -8,19 +8,19 @@ export default function Portfolio() {
   return (
     <div>
       <section className="bg-[#153C3C] px-16 py-16 text-white">
-        <div className="flex justify-between items-center mb-12">
-          <h3 className="text-5xl font-bold">
-            Our latest project <br /> triumphs
-          </h3>
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-6 mb-12">
+  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center lg:text-left">
+    Our latest project <br /> triumphs
+  </h3>
 
-          <Link href={'/portfolio'}>
-            <button className="bg-[#84a17d] cursor-pointer rounded-lg py-3 px-2  transition">
-              See All Projects
-            </button>
-          </Link>
-        </div>
+  <Link href="/portfolio">
+    <button className="bg-[#84a17d] cursor-pointer rounded-lg py-3 px-6 transition">
+      See All Projects
+    </button>
+  </Link>
+</div>
 
-        <div className="grid grid-cols-2 gap-8">
+        <div className="flex flex-col items-center gap-8 lg:grid lg:grid-cols-2  lg:justify-center lg:gap-14">
           {projects.map((project, index) => {
             return (
               <div key={index} className=" cursor-pointer">

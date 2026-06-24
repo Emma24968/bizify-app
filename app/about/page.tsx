@@ -69,7 +69,7 @@ export default function About() {
           </button>
         </div>
       </section>
-      <section className="flex bg-[#F4F5F6] px-15">
+      <section className="flex bg-[#F4F5F6] py-15 px-15">
         <div>
           {" "}
           <h3 className="text-5xl font-bold ">
