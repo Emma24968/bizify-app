@@ -11,6 +11,7 @@ import { ChevronDown, Facebook, Linkedin, Search, Twitter } from "lucide-react";
 import { cn } from "@/lib/utils";
 import ThemeToggle from "./theme-toggle";
 import Link from "next/link";
+// import { useState } from "react";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ const inter = Unbounded({
 const manrope = Manrope({
   subsets: ["latin"],
 });
+// const {isOpen,setOpen}=useState(false)
 
 export const metadata: Metadata = {
   title: "Bizify Digital Agency",
@@ -44,7 +46,7 @@ export default function RootLayout({
         <header className="bg-[#FBFBFB] dark:text-[#282626] flex items-center justify-between px-10 py-4">
           <Image src={logo} alt="Bizify Logo" width={150} height={50} />
 
-          {/* <nav>
+          <nav>
             <ul className="flex items-center gap-6">
               <li className="flex items-center gap-1 cursor-pointer">
                 <Link href="/">Home</Link>
@@ -113,7 +115,7 @@ export default function RootLayout({
                 <Link href="/contact">Contact</Link>
               </li>
             </ul>
-          </nav> */}
+          </nav>
 
           <div className="flex items-center gap-4">
             <ThemeToggle />
@@ -123,15 +125,18 @@ export default function RootLayout({
               alt="menu icon"
               width={24}
               className="cursor-pointer"
+              // onClick={if (false) {
+              //   isOpen(false)
+              // }}
             />
           </div>
         </header>{" "}
         <ThemeProvider attribute="class" enableSystem defaultTheme="light">
           {children}
         </ThemeProvider>
-        <footer className="bg-[#F4F5F6]  px-16 py-14 grid grid-cols-4 gap-12">
-          <div className="flex flex-col gap-6">
-            <Image src={logo} alt="logo" />
+        <footer className="bg-[#F4F5F6]  px-16 py-14 grid lg:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 gap-6">
+            <Image src={logo} width={70} alt="logo" />
 
             <p className="text-gray-600">
               Monotonectally synergize granular top visualize strategic
@@ -197,7 +202,7 @@ export default function RootLayout({
             </ul>
           </div>
 
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
             {gallerys.map((gallery, index) => (
               <Image
                 key={index}
