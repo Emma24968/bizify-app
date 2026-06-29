@@ -34,11 +34,11 @@ export default function AboutPage() {
         </h3>
       </section>
       <About />
-      <AboutIntro />
+      {/* <AboutIntro />
       <AboutTeam />
       <AboutTestimonial />
       <AboutContact />
-      <AboutCTA />
+      <AboutCTA /> */}
     </div>
   );
 }
