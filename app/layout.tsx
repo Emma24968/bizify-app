@@ -9,7 +9,6 @@ import logo from "@/public/logo.svg";
 import menu from "@/public/menu.svg";
 import { ChevronDown, Facebook, Linkedin, Search, Twitter } from "lucide-react";
 import { cn } from "@/lib/utils";
-import ThemeToggle from "./theme-toggle";
 import Link from "next/link";
 import HamburgerMenu from "./Hamburger";
 // import { useState } from "react";
@@ -45,10 +44,10 @@ export default function RootLayout({
     >
       <body className={`${inter.className} antialiased`}>
         <header className="bg-[#FBFBFB] dark:text-[#282626] flex items-center justify-between px-10 py-4">
-          <Image src={logo} alt="Bizify Logo" width={150} height={50} />
+          <Image src={logo}  className=" sm:flex "  alt="Bizify Logo" width={150} height={50} />
 
           <nav>
-            <ul className="flex items-center gap-6">
+            <ul className="hidden lg:flex items-center gap-6">
               <li className="flex items-center gap-1 cursor-pointer">
                 <Link href="/">Home</Link>
               </li>
@@ -119,9 +118,9 @@ export default function RootLayout({
           </nav>
 
           <div className="flex items-center gap-4">
-            <ThemeToggle />
-            <Search className="cursor-pointer" />
-            <HamburgerMenu />
+            <Search className=" cursor-pointer" />
+            <div className="lg:hidden"><HamburgerMenu />
+</div>
           </div>
         </header>{" "}
         <ThemeProvider attribute="class" enableSystem defaultTheme="light">
