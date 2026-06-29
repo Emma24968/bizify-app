@@ -11,6 +11,7 @@ import { ChevronDown, Facebook, Linkedin, Search, Twitter } from "lucide-react";
 import { cn } from "@/lib/utils";
 import ThemeToggle from "./theme-toggle";
 import Link from "next/link";
+import HamburgerMenu from "./Hamburger";
 // import { useState } from "react";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -120,15 +121,7 @@ export default function RootLayout({
           <div className="flex items-center gap-4">
             <ThemeToggle />
             <Search className="cursor-pointer" />
-            <Image
-              src={menu}
-              alt="menu icon"
-              width={24}
-              className="cursor-pointer"
-              // onClick={if (false) {
-              //   isOpen(false)
-              // }}
-            />
+            <HamburgerMenu />
           </div>
         </header>{" "}
         <ThemeProvider attribute="class" enableSystem defaultTheme="light">
