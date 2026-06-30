@@ -41,7 +41,7 @@ export default function RootLayout({
 
   <Image src={logo} alt="Bizify Logo" width={150} height={50} />
 
-  <nav>
+  {/* <nav>
     <ul className="flex items-center gap-6">
       <li className="flex items-center gap-1 cursor-pointer">
         <Link href="/">Home</Link>
@@ -66,7 +66,7 @@ export default function RootLayout({
         <Link href="#">Contact</Link>
       </li>
     </ul>
-  </nav>
+  </nav> */}
 
   <div className="flex items-center gap-4">
     <ThemeToggle />

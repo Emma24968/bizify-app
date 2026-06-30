@@ -34,9 +34,9 @@ export default function AboutPage() {
         </h3>
       </section>
       <About />
-      {/* <AboutIntro />
-      <AboutTeam />
-      <AboutTestimonial />
+      <AboutIntro />
+       <AboutTeam />
+      {/*<AboutTestimonial />
       <AboutContact />
       <AboutCTA /> */}
     </div>
