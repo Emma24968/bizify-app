@@ -1,27 +1,30 @@
 import type { Metadata } from "next";
 import { Unbounded, JetBrains_Mono } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { gallerys } from "@/app/data";
 import Image from "next/image";
 import logo from "@/public/logo.svg";
 import menu from "@/public/menu.svg";
-import {
-  ChevronDown,
-  Facebook,
-  Linkedin,
-  Search,
-  Twitter,
-} from "lucide-react";
+import { ChevronDown, Facebook, Linkedin, Search, Twitter } from "lucide-react";
 import { cn } from "@/lib/utils";
-import ThemeToggle from "./theme-toggle";
 import Link from "next/link";
+import HamburgerMenu from "./Hamburger";
+// import { useState } from "react";
 
-const jetbrainsMono = JetBrains_Mono({subsets:['latin'],variable:'--font-mono'});
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+});
 
 const inter = Unbounded({
   subsets: ["latin"],
 });
+const manrope = Manrope({
+  subsets: ["latin"],
+});
+// const {isOpen,setOpen}=useState(false)
 
 export const metadata: Metadata = {
   title: "Bizify Digital Agency",
@@ -34,112 +37,177 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en"   suppressHydrationWarning
- className={cn("font-mono", jetbrainsMono.variable)}>
-      <body className={`${inter.className} antialiased`} >
-<header className="bg-[#FBFBFB] dark:text-[#282626] flex items-center justify-between px-10 py-4">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={cn("font-mono", jetbrainsMono.variable)}
+    >
+      <body className={`${inter.className} antialiased`}>
+        <header className="bg-[#FBFBFB] dark:text-[#282626] flex items-center justify-between px-10 py-4">
+          <Image src={logo}  className=" sm:flex "  alt="Bizify Logo" width={150} height={50} />
 
-  <Image src={logo} alt="Bizify Logo" width={150} height={50} />
+          <nav>
+            <ul className="hidden lg:flex items-center gap-6">
+              <li className="flex items-center gap-1 cursor-pointer">
+                <Link href="/">Home</Link>
+              </li>
 
-  <nav>
-    <ul className="flex items-center gap-6">
-      <li className="flex items-center gap-1 cursor-pointer">
-        <Link href="/">Home</Link>
-        <ChevronDown size={16} />
-      </li>
+              <li>
+                <Link href="/about">About us</Link>
+              </li>
 
-      <li>
-        <Link href="/about">About us</Link>
-      </li>
+              <li className="relative group flex items-center gap-1 cursor-pointer">
+                <div className="flex items-center gap-1">
+                  <Link href="/services">Services</Link>
+                  <ChevronDown size={16} />
+                </div>
+                <div className="absolute left-0 top-full z-50 hidden w-64 rounded-lg bg-white shadow-lg group-hover:block">
+                  <Link
+                    href="/services/finance-planning"
+                    className="block px-4 py-3 hover:bg-gray-100"
+                  >
+                    Finance Planning
+                  </Link>
 
-      <li className="flex items-center gap-1 cursor-pointer">
-        <Link href="#">Services</Link>
-        <ChevronDown size={16} />
-      </li>
+                  <Link
+                    href="/services/tax-file-audit"
+                    className="block px-4 py-3 hover:bg-gray-100"
+                  >
+                    Tax File Audit
+                  </Link>
 
-      <li className="flex items-center gap-1 cursor-pointer">
-        <Link href="#">Blog</Link>
-        <ChevronDown size={16} />
-      </li>
+                  <Link
+                    href="/services/risk-management"
+                    className="block px-4 py-3 hover:bg-gray-100"
+                  >
+                    Risk Management
+                  </Link>
 
-      <li>
-        <Link href="#">Contact</Link>
-      </li>
-    </ul>
-  </nav>
+                  <Link
+                    href="/services/investment"
+                    className="block px-4 py-3 hover:bg-gray-100"
+                  >
+                    Investment
+                  </Link>
 
-  <div className="flex items-center gap-4">
-    <ThemeToggle />
-    <Search className="cursor-pointer" />
-    <Image src={menu} alt="menu icon" width={24} className="cursor-pointer" />
-  </div>
+                  <Link
+                    href="/services/business-strategy"
+                    className="block px-4 py-3 hover:bg-gray-100"
+                  >
+                    Business Strategy
+                  </Link>
 
-</header>     <ThemeProvider attribute='class' enableSystem defaultTheme="system">{children}</ThemeProvider>   
+                  <Link
+                    href="/services/marketing-strategy"
+                    className="block px-4 py-3 hover:bg-gray-100"
+                  >
+                    Marketing Strategy
+                  </Link>
+                </div>
+              </li>
 
-<footer className="bg-[#F4F5F6]  px-16 py-14 grid grid-cols-4 gap-12">
+              <li className="flex items-center gap-1 cursor-pointer">
+                <Link href="/blog">Blog</Link>
+                <ChevronDown size={16} />
+              </li>
 
-  <div className="flex flex-col gap-6">
-    <Image src={logo} alt="logo" />
+              <li>
+                <Link href="/contact">Contact</Link>
+              </li>
+            </ul>
+          </nav>
 
-    <p className="text-gray-600">
-      Monotonectally synergize granular top visualize strategic
-      infomediaries after task state of the art infrastructures.
-    </p>
+          <div className="flex items-center gap-4">
+            <Search className=" cursor-pointer" />
+            <div className="lg:hidden"><HamburgerMenu />
+</div>
+          </div>
+        </header>{" "}
+        <ThemeProvider attribute="class" enableSystem defaultTheme="light">
+          {children}
+        </ThemeProvider>
+        <footer className="bg-[#F4F5F6]  px-16 py-14 grid lg:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 gap-6">
+            <Image src={logo} width={70} alt="logo" />
 
-    <div className="flex gap-4">
-      <div className="bg-white p-2 rounded hover:bg-[#84A17D] dark:hover:bg-black dark:hover:text-white dark:bg-[#84A17D] cursor-pointer">
-        <Facebook />
-      </div>
+            <p className="text-gray-600">
+              Monotonectally synergize granular top visualize strategic
+              infomediaries after task state of the art infrastructures.
+            </p>
 
-      <div className="bg-white p-2 rounded hover:bg-[#84A17D] dark:hover:bg-black dark:hover:text-white dark:bg-[#84A17D] cursor-pointer">
-        <Twitter />
-      </div>
+            <div className="flex gap-4">
+              <div className="bg-white p-2 rounded hover:bg-[#84A17D] dark:hover:bg-black dark:hover:text-white dark:bg-[#84A17D] cursor-pointer">
+                <Facebook />
+              </div>
 
-      <div className="bg-white p-2 rounded hover:bg-[#84A17D] dark:hover:bg-black dark:hover:text-white dark:bg-[#84A17D] cursor-pointer">
-        <Linkedin />
-      </div>
-    </div>
-  </div>
+              <div className="bg-white p-2 rounded hover:bg-[#84A17D] dark:hover:bg-black dark:hover:text-white dark:bg-[#84A17D] cursor-pointer">
+                <Twitter />
+              </div>
 
-  <div>
-    <h3 className="font-semibold mb-4 dark:text-[#172426]">Quick Links</h3>
+              <div className="bg-white p-2 rounded hover:bg-[#84A17D] dark:hover:bg-black dark:hover:text-white dark:bg-[#84A17D] cursor-pointer">
+                <Linkedin />
+              </div>
+            </div>
+          </div>
 
-    <ul className="flex flex-col gap-3 text-gray-600">
-      <li><a href="/">Home</a></li>
-      <li><Link href="/about">About us</Link></li>
-      <li><Link href="#">Services</Link></li>
-      <li><Link href="#">Blog</Link></li>
-      <li><Link href="#">Contact</Link></li>
-    </ul>
-  </div>
+          <div>
+            <ul className="flex flex-col gap-3 text-gray-600">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <Link href="/about">About us</Link>
+              </li>
+              <li>
+                <Link href="/services">Services</Link>
+              </li>
+              <li>
+                <Link href="/blog">Blog</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact</Link>
+              </li>
+            </ul>
+          </div>
 
-  <div>
-    <h3 className="font-semibold mb-4 dark:text-[#172426]">Useful Links</h3>
+          <div>
+            <h3 className="font-semibold mb-4 dark:text-[#172426]">
+              Useful Links
+            </h3>
 
-    <ul className="flex flex-col gap-3 text-gray-600">
-      <li><a href="#">Company</a></li>
-      <li><a href="#">Career</a></li>
-      <li><a href="#">Our Blog</a></li>
-      <li><a href="#">Press Media</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-    </ul>
-  </div>
+            <ul className="flex flex-col gap-3 text-gray-600">
+              <li>
+                <a href="/">Company</a>
+              </li>
+              <li>
+                <a href="#">Career</a>
+              </li>
+              <li>
+                <a href="/blog">Our Blog</a>
+              </li>
+              <li>
+                <a href="#">Press Media</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
 
-  <div className="grid grid-cols-3 gap-4">
-    {gallerys.map((gallery, index) => (
-      <Image
-        key={index}
-        src={gallery}
-        alt="gallery"
-        width={90}
-        height={90}
-        className="rounded"
-      />
-    ))}
-  </div>
-
-</footer> 
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+            {gallerys.map((gallery, index) => (
+              <Image
+                key={index}
+                src={gallery}
+                alt="gallery"
+                width={90}
+                height={90}
+                className="rounded"
+              />
+            ))}
+          </div>
+        </footer>
       </body>
-   </html>
+    </html>
   );
 }
