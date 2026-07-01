@@ -36,8 +36,8 @@ export default function AboutPage() {
       <About />
       <AboutIntro />
        <AboutTeam />
-      {/*<AboutTestimonial />
-      <AboutContact />
+      <AboutTestimonial />
+      {/*<AboutContact />
       <AboutCTA /> */}
     </div>
   );
