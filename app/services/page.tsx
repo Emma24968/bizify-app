@@ -8,7 +8,7 @@ import ServiceCTA from "@/components/services/CTA";
 export default function page() {
   return (
     <div className="">
-      <PageHeader title="Services" currentPage="Service" />
+      {/* <PageHeader title="Services" currentPage="Service" /> */}
       <Services />
       <Newsletter />
       <Pricing />

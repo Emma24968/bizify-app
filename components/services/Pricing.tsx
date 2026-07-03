@@ -8,7 +8,7 @@ export default function Pricing() {
       <h3 className="text-[28px] pt-2">
         Your best pricing <br /> offer awaits
       </h3>
-      <section className="grid md:grid-cols-3 gap-6 px-10 py-20 ">
+      <section className="grid grid-cols-1 justify-items-center md:grid-cols-3 gap-6  py-20 ">
         {pricingPlans.map((plan, index) => (
           <PricingCard key={index} plan={plan} />
         ))}
