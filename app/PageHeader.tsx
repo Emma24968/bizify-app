@@ -1,4 +1,5 @@
 "use client";
+
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
@@ -7,17 +8,27 @@ type PageHeaderProps = {
   currentPage: string;
 };
 
-export default function PageHeader({ title, currentPage }: PageHeaderProps) {
+export default function PageHeader({
+  title,
+  currentPage,
+}: PageHeaderProps) {
   return (
-<section className="bg-[#153C3C] w-full py-20 flex flex-col justify-center items-center text-center">      <h1 className="px-16 text-[70px] text-white font-bold">
-        {title}
-      </h1>
+    <section className="bg-[#153C3C] py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 flex flex-col items-center text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+          {title}
+        </h1>
 
-      <h3 className="px-16 flex justify-center items-center gap-2">
-        <Link href='/'><span className="text-[#fffa]">Home</span></Link>
-        <ChevronRight className="text-white" />
-        <span className="text-white">{currentPage}</span>
-      </h3>
+        <div className="mt-4 flex items-center gap-2 text-sm sm:text-base">
+          <Link href="/" className="text-[#fffa] hover:text-white transition">
+            Home
+          </Link>
+
+          <ChevronRight className="w-4 h-4 text-white" />
+
+          <span className="text-white">{currentPage}</span>
+        </div>
+      </div>
     </section>
   );
 }
