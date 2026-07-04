@@ -9,12 +9,12 @@ export default function page() {
   return (
     <div className="">
       <PageHeader currentPage="Blog" title="Home" />
-      <div className="grid grid-cols-3 py-16 px-16 justify-items-center">
+      <div className="grid sm:grid-cols-2 gap-4 lg:grid-cols-3 py-16 px-4 sm:px-6 lg:px-16 justify-items-center">
         {blogpost.map((blog, index) => {
           return (
             <div
               key={index}
-              className="w-[20rem] overflow-hidden group rounded-t-xl pb-11"
+              className=" overflow-hidden group rounded-t-xl pb-11"
             >
               <Image
                 src={blog.image}
@@ -29,7 +29,7 @@ export default function page() {
                   <p className="text-[#3F4E50] font-light">10 May 2025</p>
                 </div>
                 <h3>{blog.title}</h3>
-                <div className="flex items-centergroup ">
+                <div className="flex items-center group ">
                   <button className="text-[#84a17d] cursor-pointer  text-[12px] gap-2 hover:text-black">
                     Learn more
                   </button>
