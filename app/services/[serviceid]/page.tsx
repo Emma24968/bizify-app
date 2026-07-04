@@ -13,7 +13,7 @@ export default function Servicedetails({
   return (
     <div className="">
       <PageHeader title="Services" currentPage="Service Details" />
-      <div className="flex mt-20 px-4 sm:px-6 lg:px-16 ">
+      <div className="flex mt-20 px-4 gap-7 sm:px-6 lg:px-16 ">
         <Details />
         <div className="hidden lg:block">
           <Sidebar />

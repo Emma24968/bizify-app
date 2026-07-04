@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div className="flex justify-center items-center min-h-screen">
       
-      <div className="w-[70%] bg-[#172426E5] rounded-2xl flex justify-center items-center gap-10 py-10 px-6">
+      <div className="w-auto bg-[#172426E5] rounded-2xl flex justify-center items-center gap-10 py-10 px-6">
         
         {contact.map((details, index) => {
           return (
