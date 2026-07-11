@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { serviceCards } from "@/app/data";
-import { serviceList } from "@/app/data";
 import { ArrowRight } from "lucide-react";
 
 export default function Services() {

@@ -25,7 +25,7 @@ export default function Plan() {
           </div>
         </div>
 
-        <div className="flex justify-center gap-14">
+        <div className="flex flex-col items-center gap-8 lg:flex-row lg:justify-center lg:gap-14">
           {plans.map((plan, index) => {
             return (
               <div key={index} className="rounded-xl bg-[#e3ebf3d4] dark:bg-[#e4e4e4] p-10">
