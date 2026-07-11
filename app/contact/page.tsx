@@ -7,8 +7,8 @@ import PageHeader from "../PageHeader";
 export default function page() {
   return (
     <div className="">
-      <PageHeader currentPage="Contact" title="Contact Us" />
-      <div className="flex px-16 py-10 gap-30   justify-between">
+      <PageHeader currentPage="Contact"  title="Contact Us" />
+      <div className="sm:flex px-4 sm:py-14 sm:px-6 lg:px-16 space-y-5 sm:gap-15  lg:gap-30 justify-between">
         <ContactForm />
         <Detail />
       </div>
