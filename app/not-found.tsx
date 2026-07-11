@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PageHeader from "./PageHeader";
+import Home from "./page";
 
 export const dynamic = "force-dynamic";
 

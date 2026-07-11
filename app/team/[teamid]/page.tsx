@@ -24,7 +24,7 @@ export default async function TeamDetails({ params }: Props) {
   const email = `${board.name.toLowerCase().replace(/\s+/g, "")}@gmail.com`;
 
   return (
-    <div className="bg-[#fff]  py-16">
+    <div className="bg-[#fff]  ">
       <PageHeader title="Home" currentPage="Team Details"  />
       <div className="max-w-6xl mx-auto  ">
         <div className="flex flex-col py-16 lg:flex-row gap-12">

@@ -54,6 +54,11 @@ import crypto from "@/public/crypto.webp";
 import blog1 from "@/public/blog1.jpg";
 import blog2 from "@/public/blog2.jpg";
 import blog3 from "@/public/blog3.jpg";
+import portfolio3 from "@/public/portfolio3.webp";
+import portfolio6 from "@/public/portfolio6.webp";
+import portfolio1 from "@/public/portfolio1.webp";
+import portfolio2 from "@/public/portfolio2.webp";
+import { title } from "process";
 
 export const gallerys = [ig1, ig2, ig3, ig4, ig5, ig6];
 export const clients = [logo1, logo2, logo3, logo4, logo5, logo6];
@@ -406,7 +411,7 @@ export const Teams = [
     ],
   },
 ];
-export const Teams = [
+export const TeamsMembers = [
   {
     id: "sophia-rodriguez",
     image: team3,
@@ -508,12 +513,12 @@ export const Teams = [
   },
 ];
 
-export const skills = [
+export const skill = [
   { name: "Productivity", value: "90%" },
   { name: "Digital Marketing", value: "80%" },
   { name: "Technology", value: "85%" },
 ];
-export const faqs = [
+export const faq = [
   {
     question: "How to choose health insurance?",
     answer: `If you ask our clients what it’s like working 36, they’ll  about how much we care about their success.`,
