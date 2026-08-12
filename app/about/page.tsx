@@ -292,6 +292,12 @@ export default function About() {
           </form>
         </div>
       </section>
+      <About />
+      <AboutIntro />
+       <AboutTeam />
+      <AboutTestimonial />
+      <AboutContact />
+      <AboutCTA />
     </div>
   );
 }
